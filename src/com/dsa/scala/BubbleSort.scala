@@ -5,6 +5,9 @@ object BubbleSort {
   def main (args: Array[String]): Unit = {
 
     val intArray = Array(20, 35, -15, 7, 55, 1, -22)
+    println("**********BubbleSort Scala**********")
+    println("Unsorted array")
+    for (i <- intArray) println(i)
 
     for (lastUnsortedIndex <- intArray.length - 1 until 0 by -1) {
 
@@ -15,6 +18,7 @@ object BubbleSort {
         }
       }
     }
+    println(" Sorted array - By BubbleSort ")
     for (i <- intArray) println(i)
   }
 

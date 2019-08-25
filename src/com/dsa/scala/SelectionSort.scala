@@ -20,7 +20,6 @@ object SelectionSort {
       }
       swap(intArray,largest,lastUnsortedIndex)
     }
-
     println(" Sorted array - By SelectionSort ")
     for (i <- intArray) println(i)
   }

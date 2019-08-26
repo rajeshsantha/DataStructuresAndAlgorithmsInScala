@@ -20,7 +20,7 @@ class FibonacciGenerator extends SequenceGenerator {
 
     /**
       * Below is the functional implementation(i.e avoid loops and mutable arrays )
-      * This can be donw by Scala Streams
+      * This can be done by Scala Streams
       */
     streamFib.take(total).toList
 

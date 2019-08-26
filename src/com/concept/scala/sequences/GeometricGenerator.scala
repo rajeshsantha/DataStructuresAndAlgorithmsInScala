@@ -16,6 +16,7 @@ class GeometricGenerator (start: Int, raito: Int) extends SequenceGenerator {
       * }
       *sequence.toList
       */
+
     /**
       * Below is the functional implementation
       */

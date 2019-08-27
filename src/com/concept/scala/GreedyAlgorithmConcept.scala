@@ -3,8 +3,8 @@ package com.concept.scala
 import scala.collection.mutable.ListBuffer
 
 /**
-  * @author Rajesh
-  * @version 1.0 on 27th Aug,2019
+  * @author Rajesh Santha
+  * @version 1.0 on 28th Aug,2019
   * @usecase Below Greedy algorithm pattern to solve below problem
   *          farmer need to put a fence around his field having 'p' perimeter and 'lengths' are the variable lengths of wiresets available
   *          He want to complete the fence with less possible individual wiresets,
@@ -16,7 +16,7 @@ import scala.collection.mutable.ListBuffer
   *
   */
 object GreedyAlgorithmConcept {
-  //lengths are the variable lengths of fences
+  //lengths are the variable meters of lengths of wires
   val lengths = Array(10, 5, 2, 1)
 
   def main(args: Array[String]): Unit = {

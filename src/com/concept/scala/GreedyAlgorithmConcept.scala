@@ -5,7 +5,7 @@ import scala.collection.mutable.ListBuffer
 /**
   * @author Rajesh Santha
   * @version 1.0 on 28th Aug,2019
-  * @usecase Below Greedy algorithm pattern to solve below problem
+  * @usecase Greedy algorithm pattern to solve below usecase
   *          farmer need to put a fence around his field having 'p' perimeter and 'lengths' are the variable lengths of wiresets available
   *          He want to complete the fence with less possible individual wiresets,
   *          to avoid 'the extra effort of joining the small lengths and cost of buying more number of smaller sets'
@@ -16,6 +16,7 @@ import scala.collection.mutable.ListBuffer
   *
   */
 object GreedyAlgorithmConcept {
+
   //lengths are the variable meters of lengths of wires
   val lengths = Array(10, 5, 2, 1)
 
@@ -76,8 +77,6 @@ object GreedyAlgorithmConcept {
     finalChoice.reels
   }
 
-
   case class Choice(p: Int, reels: List[Int])
-
 
 }

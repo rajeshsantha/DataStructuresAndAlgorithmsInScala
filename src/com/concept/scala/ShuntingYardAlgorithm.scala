@@ -13,7 +13,7 @@ package com.concept.scala
 object ShuntingYardAlgorithm {
 
   def main(args: Array[String]): Unit = {
-    println("********shunting yard algorithm*********")
+    println("******shunting yard algorithm*******")
   }
 
 }

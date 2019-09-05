@@ -16,17 +16,16 @@ print multplication table as in below format with proper padding and indentation
   10 20 30 40 50 60 70 80 90 100
 
  */
-object MultiplicationTable {
+object MultiplicationTable extends App{
 
-  def main(args: Array[String]): Unit = {
     multiplication_table_imperative()
     multiplication_table_functional().foreach(println)
-  }
+
 
   /**
     * Its imperative because its contains vars ,while loops, and having no value be returned
     */
-  def multiplication_table_imperative() = {
+  def multiplication_table_imperative () = {
     println("\nIn multiplication_table_imperative \n")
     var i = 1
     while (i <= 10) {
@@ -46,7 +45,7 @@ object MultiplicationTable {
     }
   }
 
-  def multiplication_table_functional() = {
+  def multiplication_table_functional () = {
     println("\nIn multiplication_table_functional \n")
 
     for (i <- 1 to 10) yield {

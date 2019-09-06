@@ -6,7 +6,7 @@ import scala.io.StdIn
   * @version 1.0 (No further revison)
   * @todo
   * You are given a list. Return the sum of odd elements from the given list.
-  * 
+  *
   * @note Use functional programming, avoid imperative programming.
   *
   */

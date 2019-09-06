@@ -10,7 +10,7 @@ import scala.io.StdIn
   * This challenge uses a custom checker.
   * if input is num = 4 , return exactly the format [1,2,3,4] , inlcuding the '[',']'
   *
-  * @note Use functional programming, not imperative programming
+  * @note Use functional programming, avoid imperative programming.
   *
   */
 object ArrayOfNElements extends App {

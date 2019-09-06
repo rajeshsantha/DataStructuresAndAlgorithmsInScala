@@ -16,7 +16,8 @@ package com.concept.scala.hackerrank
   * Output each element of the original list S times, each on a separate line.
   * You have to return the list/vector/array of S * X integers.
   * The relative positions of the values should be the same as the original list provided in the input.
-  * @note Use functional programming, not imperative programming
+  *
+  * @note Use functional programming, avoid imperative programming.
   *
   */
 

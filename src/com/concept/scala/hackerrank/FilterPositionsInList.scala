@@ -17,7 +17,7 @@ package com.concept.scala.hackerrank
   * The relative positions of the remaining even-position elements should be the same as they were in the original array.
   * Each integer will be on a separate line.
   *
-  * @note Use functional programming, not imperative programming
+  * @note Use functional programming, avoid imperative programming.
   *
   */
 

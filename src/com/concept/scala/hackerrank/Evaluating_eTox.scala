@@ -1,10 +1,12 @@
 package com.concept.scala.hackerrank
 
 import scala.annotation.tailrec
+import scala.collection.mutable.ListBuffer
+
 
 /**
   * @author Rajesh Santha
-  * @version 1.0 (No further revison)
+  * @version 1.3
   * @todo
   * Evaluate {e to the power of x} for given values of  x by using the summation of series for the first 10 terms.
   * @Input_Format
@@ -12,7 +14,9 @@ import scala.annotation.tailrec
   * The first line contains an integer N, the number of test cases.
   * N lines follow. Each line contains a value of x for which you need to output the value of {e to the power of x} using the above series expansion.
   * These input values have exactly 4 decimal places each.
+  *
   * @note Use functional programming, not imperative programming
+  *
   * @see https://www.hackerrank.com/challenges/eval-ex/problem
   *
   *
@@ -22,13 +26,15 @@ object Evaluating_eTox {
 
   def main(args: Array[String]): Unit = {
 
-
-    val n = scala.io.StdIn.readLine.trim.toInt
+    val stdin = scala.io.StdIn
+    val n = stdin.readLine.trim.toInt
+    val resultList = new ListBuffer[String]()
 
     for (nItr <- 1 to n) {
-      val x = scala.io.StdIn.readLine.trim.toDouble
-      println(eToXevaluator(x))
+      val x = stdin.readLine.trim.toDouble
+      resultList += eToXevaluator(x)
     }
+    resultList.foreach(println)
   }
 
   def eToXevaluator(num: Double): String = {

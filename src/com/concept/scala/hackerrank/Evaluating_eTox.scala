@@ -15,7 +15,7 @@ import scala.collection.mutable.ListBuffer
   * N lines follow. Each line contains a value of x for which you need to output the value of {e to the power of x} using the above series expansion.
   * These input values have exactly 4 decimal places each.
   *
-  * @note Use functional programming, not imperative programming
+  * @note Use functional programming, avoid imperative programming (no Vars, no loops, no side effects)
   *
   * @see https://www.hackerrank.com/challenges/eval-ex/problem
   *

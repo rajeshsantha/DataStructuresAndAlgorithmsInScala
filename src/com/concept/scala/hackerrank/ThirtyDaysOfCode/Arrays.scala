@@ -1,6 +1,5 @@
 package com.concept.scala.hackerrank.ThirtyDaysOfCode
 
-
 /**
   * @author Rajesh Santha
   * @version 1.0 (No further revison)

@@ -1,4 +1,4 @@
-package com.concept.scala.hackerrank
+package com.concept.scala.hackerrank.functionalProgramming
 
 import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer

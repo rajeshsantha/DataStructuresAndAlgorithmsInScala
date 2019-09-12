@@ -1,4 +1,4 @@
-package com.concept.scala.hackerrank
+package com.concept.scala.hackerrank.functionalProgramming
 
 /**
   * @author Rajesh Santha

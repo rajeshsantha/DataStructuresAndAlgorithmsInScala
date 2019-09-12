@@ -1,4 +1,5 @@
-package com.concept.scala.hackerrank
+package com.concept.scala.hackerrank.ThirtyDaysOfCode
+
 
 /**
   * @author Rajesh Santha

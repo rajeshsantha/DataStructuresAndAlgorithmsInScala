@@ -2,7 +2,7 @@ package com.concept.scala.sequences
 
 class FibonacciGenerator extends SequenceGenerator {
 
-  val streamFib: Stream[Int] = 1 #:: 1 #:: streamFib.zip(streamFib.tail).map(t => t._1 + t._2)
+  val streamFib: Stream[Int] = 0 #:: 1 #:: streamFib.zip(streamFib.tail).map(t => t._1 + t._2)
 
   override def generate (total: Int): List[Int] = {
 

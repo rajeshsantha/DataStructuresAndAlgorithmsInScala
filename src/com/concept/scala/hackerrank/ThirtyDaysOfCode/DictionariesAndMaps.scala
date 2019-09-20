@@ -4,7 +4,7 @@ import scala.collection.mutable.Map
 import scala.collection.mutable.ListBuffer
 /**
   * @author Rajesh Santha
-  * @version 1.0 (No further revison)
+  * @version 1.0 (10k input test case version pending) 
   * @todo part of 30 days of code challenge. (Arrays)
   * @see https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem
   * @note Use functional programming, avoid imperative programming.

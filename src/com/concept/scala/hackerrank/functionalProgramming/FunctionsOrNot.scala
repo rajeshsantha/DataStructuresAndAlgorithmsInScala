@@ -1,6 +1,6 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
-import scala.collection.immutable.HashSet
+import scala.collection.mutable.HashSet
 import scala.io.StdIn._
 
 /**

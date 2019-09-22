@@ -24,7 +24,6 @@ object InsertionSort {
 
     println("Sorted array - By Insertion sort")
     insertionSort(intArray.toList).foreach(println)
-    //for (i <- intArray) println(i)
 
 
   }

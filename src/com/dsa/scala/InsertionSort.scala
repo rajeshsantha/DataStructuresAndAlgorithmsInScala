@@ -13,27 +13,22 @@ object InsertionSort {
         var newElement = intArray(firstUnsortedIndex)
 
         var i=firstUnsortedIndex
-
        for(i <-firstUnsortedIndex until 0 by 1 if intArray(i - 1) > newElement)
          {
            intArray(i)= intArray(i-1)
          }
         intArray(i)=newElement
-
       }*/
-
     println("Sorted array - By Insertion sort")
     insertionSort(intArray.toList).foreach(println)
-
-
   }
+  
   def insertionSort[A](la: List[A])(implicit ord: Ordering[A]): List[A] = {
     println("inside insertionSort method")
     def insert(la: List[A], a: A) = {
       val (h, t) = la.span(ord.lt(_, a))
       h ::: (a :: t)
     }
-
     la.foldLeft(List[A]()) {(acc, a) => insert(acc, a)}
   }
 

@@ -1,7 +1,7 @@
 package com.concept.scala
 /**
 * @author Rajesh
-*@example Imperative programming vs functional programming
+* @example Imperative programming vs functional programming vs using stack
 */
 object DecimalToBinary {
   def main(args: Array[String]): Unit = {

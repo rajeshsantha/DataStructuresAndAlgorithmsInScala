@@ -37,6 +37,9 @@ object NumberOfElements extends App {
     countListTailRecHelper(0, lsx)
   }
 
+  def functionalListCount[A] (ls: List[A]): Int = ls.foldLeft(0) { (x, _) => x + 1 }
+
+
   println("Non-tail recursive")
 
   printResult(list1)
@@ -49,9 +52,16 @@ object NumberOfElements extends App {
   printTailRecResult(list2)
   printTailRecResult(List(1)) //  =>  1::Nil
 
+  println("functional count")
+  printFunctionalCountResult(list1)
+  printFunctionalCountResult(list2)
+  printFunctionalCountResult(List(1)) //  =>  1::Nil
+
 
   def printResult[A] (ls: List[A]) = println(listCountRecursive(ls))
 
   def printTailRecResult[A] (ls: List[A]) = println(listCountTailRecursive(ls))
+
+  def printFunctionalCountResult[A] (ls: List[A]) = println(functionalListCount(ls))
 
 }

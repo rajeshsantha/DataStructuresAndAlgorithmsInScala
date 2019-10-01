@@ -9,7 +9,7 @@ package com.concept.scala.hackerrank.functionalProgramming
   * @example If Input string is "abcaaabbb" => output should be abca3b3
   *
   */
-object StringCompressionAlgorithm_What_In_The_World_Version extends App {
+object StringCompressionAlgorithm_OneLiner_Version extends App {
 //abbbbcdeeerxxxxxxxxxghsd
   println("(\\w)\\1+".r.replaceAllIn(readLine(), x => "$1" + x.toString.length))
 }

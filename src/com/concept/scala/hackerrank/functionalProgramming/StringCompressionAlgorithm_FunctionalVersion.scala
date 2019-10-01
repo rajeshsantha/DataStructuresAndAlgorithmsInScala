@@ -16,21 +16,21 @@ object StringCompressionAlgorithm_FunctionalVersion {
   def compress(xs: String): List[(Char, Int)] = {
 
     @tailrec
-    def go(acc: List[(Char, Int)], ys: String): List[(Char, Int)] = {
-      if (ys.isEmpty) {
-        acc
+    def helperRecursive(accumulator: List[(Char, Int)], str: String): List[(Char, Int)] = {
+      if (str.isEmpty) {
+        accumulator
       } else {
-        val y: Char = ys.head
-        val spans: (String, String) = ys.span(_ == y)
-        go((y, spans._1.length) :: acc, spans._2)
+        val firstChar = str.head
+        val spans: (String, String) = str.span(_ == firstChar)
+        helperRecursive((firstChar, spans._1.length) :: accumulator, spans._2)
       }
     }
 
-    go(Nil, xs).reverse
+    helperRecursive(Nil, xs).reverse
   }
 
-  def format_count_tuple[T](tups: List[(T, Int)]): String = {
-    tups.map(x => {
+  def tupleToString[T](tuples: List[(T, Int)]): String = {
+    tuples.map(x => {
       if (x._2 == 1) {
         s"${x._1}"
       } else {
@@ -40,8 +40,8 @@ object StringCompressionAlgorithm_FunctionalVersion {
   }
 
   def main(args: Array[String]) {
-    val xs = readLine
-    println(format_count_tuple(compress(xs)))
+    val inputString = readLine
+    println(tupleToString(compress(inputString)))
   }
 
 }

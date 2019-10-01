@@ -6,7 +6,7 @@ import scala.annotation.tailrec
   * @author Rajesh Santha
   * @version 1.0
   * @note Use functional programming, avoid imperative programming.(follwed by Version 1.1 and 1.2)
-  *       This one uses tail recursion in functional programming.(check StringCompressionAlgorithm_What_In_The_World_Version for one-liner solution)
+  *       This one uses tail recursion in functional programming.(check StringCompressionAlgorithm_OneLiner_Version  for one-liner solution)
   * @see https://www.hackerrank.com/challenges/string-compression/problem
   * @example If Input string is "abcaaabbb" => output should be abca3b3
   *

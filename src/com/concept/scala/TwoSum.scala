@@ -19,10 +19,10 @@ object TwoSum {
     //val arr =nums.sorted.combinations(2).map(x=>if(x.sum==target) x else 0).filter(x=>x!=0).map(x=>x.asInstanceOf[Array[Int]]).map(c=>(c(0),c(1))).toArray.map(x=>List(x._1,x._2)).flatten
     val itr = twoSumMutiples(nums, target)
 
-    /*for (i <- itr.indices) {
+    /*
+   for (i <- itr.indices) {
       println(nums.indexOf(itr(i)._1) + " " + nums.indexOf(itr(i)._2))
     }
-
 */
     itr.map(x => nums.indexOf(x))
 

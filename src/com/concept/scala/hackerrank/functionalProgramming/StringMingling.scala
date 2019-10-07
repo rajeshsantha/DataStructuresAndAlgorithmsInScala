@@ -12,7 +12,7 @@ import scala.annotation.tailrec
   *          ii) With recursion
   *          iii)With Tail-recursion
   * @note Use functional programming, avoid imperative programming
-  * @see
+  * @see https://www.hackerrank.com/challenges/string-mingling/problem
   */
 object StringMingling {
 

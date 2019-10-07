@@ -29,7 +29,7 @@ object TwoSum {
 
   }
 
-  def twoSumMutiples(nums: Array[Int], target: Int): Array[((Int, Int)] =
+  def twoSumMutiples(nums: Array[Int], target: Int): Array[(Int, Int)] = {
     nums
       .sorted
       .combinations(2)
@@ -38,6 +38,7 @@ object TwoSum {
       .map(x => x.asInstanceOf[Array[Int]])
       .map(c => (c(0), c(1)))
       .toArray
+  }
 
   def twoSumSingleSet(nums: Array[Int], target: Int): Array[Int] =
     nums

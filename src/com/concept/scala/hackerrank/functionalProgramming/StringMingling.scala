@@ -1,5 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
+import scala.annotation.tailrec
+
 /**
   * @author Rajesh
   * @version 1.2
@@ -31,6 +33,7 @@ object StringMingling {
 
   def tail_recursive_StringMingling(str1: List[Char], str2: List[Char]): List[Char] = {
 
+    @tailrec
     def tail_recursive_StringMinglingHelper(str1: List[Char], str2: List[Char], acc: List[Char]): List[Char] = {
 
       if (str1.isEmpty) acc

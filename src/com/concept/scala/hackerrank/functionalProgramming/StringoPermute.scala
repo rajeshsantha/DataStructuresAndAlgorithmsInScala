@@ -16,6 +16,7 @@ import scala.annotation.tailrec
 
 object StringoPermute {
   def main(args: Array[String]): Unit = {
+    //val listStr = scala.io.Source.stdin.getLines.toList
 
     val str = "a1b2c3d4"
     println(s"input string is $str")
@@ -45,4 +46,6 @@ object StringoPermute {
     list.grouped(num).map(x => x.reverse).toList.flatten
 
   }
+
 }
+

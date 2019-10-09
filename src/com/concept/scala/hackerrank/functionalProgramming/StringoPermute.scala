@@ -4,7 +4,7 @@ import scala.annotation.tailrec
 
 /**
   * @author Rajesh
-  * @version 1.1 (not completed yet tail-recursion,recusion implementation)
+  * @version 1.1 
   * @todo String Permutations based on the input
   * @usecase Implement the solution in all 3 ways.
   *          i)  With Built-in libraries

@@ -1,6 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 import scala.annotation.tailrec
+import scala.collection.mutable.ListBuffer
 
 /**
   * @author Rajesh
@@ -20,9 +21,20 @@ object StringoPermute {
 
     val str = "a1b2c3d4"
     println(s"input string is $str")
-    print("output string is  ")
-    print(permuteString(str.toList, 2).mkString)
-    print(builtin_Permutation(str.toList, 2).mkString.substring(str.size))
+    println("output string is  ")
+
+    val num = scala.io.StdIn.readInt()
+    val listInput: ListBuffer[String] = ListBuffer()
+
+    for (i <- 1 to num)
+      listInput.append(scala.io.StdIn.readLine().toString)
+
+    /*
+        println(permuteString(str.toList, 2).mkString)
+        println(builtin_Permutation(str.toList, 2).mkString.substring(str.length))
+    */
+    for (str <- listInput)
+      println(permuteString(str.toList, 2).mkString.substring(str.length))
 
 
   }
@@ -41,6 +53,22 @@ object StringoPermute {
 
     f(ls, acc)
   }
+
+  def permuteStringList(ls: List[Char], num: Int): List[Char] = {
+    val acc = List[Char]()
+
+    @tailrec
+    def f(ls: List[Char], acc: List[Char]): List[Char] = {
+      ls match {
+        //case _ :: Nil => acc
+        case Nil => acc
+        case x :: y :: tail => f(tail, acc ++ List(y, x))
+      }
+    }
+
+    f(ls, acc)
+  }
+
 
   def builtin_Permutation(list: List[Char], num: Int): List[Char] = {
     list.grouped(num).map(x => x.reverse).toList.flatten

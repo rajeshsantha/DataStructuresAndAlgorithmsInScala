@@ -5,7 +5,7 @@ package com.concept.scala.hackerrank.functionalProgramming
   * @version 1.3
   * @todo refer the below link
   * @note Use functional programming, avoid imperative programming (no Vars, no loops, no side effects)
-  *       P.S  : Its more of a calculus problem than a functional programming. (better not to waste time unless to improve the calculus)
+  *       P.S  : Its more of a calculus problem than a functional programming.
   *       In case if you want to get understanding of the problem, refer
   *       https://www.intmath.com/applications-integration/4-volume-solid-revolution.php
   *

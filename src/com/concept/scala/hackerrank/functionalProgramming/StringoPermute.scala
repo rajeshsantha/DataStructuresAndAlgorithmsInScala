@@ -16,36 +16,27 @@ import scala.collection.mutable.ListBuffer
   */
 
 object StringoPermute {
-  def main(args: Array[String]): Unit = {
-    //val listStr = scala.io.Source.stdin.getLines.toList
-
-    val str = "a1b2c3d4"
-    println(s"input string is $str")
-    println("output string is  ")
-
+  def main (args: Array[String]): Unit = {
     val num = scala.io.StdIn.readInt()
+
     val listInput: ListBuffer[String] = ListBuffer()
 
     for (i <- 1 to num)
       listInput.append(scala.io.StdIn.readLine().toString)
 
-    /*
-        println(permuteString(str.toList, 2).mkString)
-        println(builtin_Permutation(str.toList, 2).mkString.substring(str.length))
-    */
-    for (str <- listInput)
-      println(permuteString(str.toList, 2).mkString.substring(str.length))
-
+    for (str <- listInput) {
+      println(permuteString(str.toList, 2).mkString)
+    }
 
   }
 
-  def permuteString(ls: List[Char], num: Int): List[Char] = {
+  def permuteString (ls: List[Char], num: Int): List[Char] = {
     val acc = List[Char]()
 
     @tailrec
-    def f(ls: List[Char], acc: List[Char]): List[Char] = {
+    def f (ls: List[Char], acc: List[Char]): List[Char] = {
       ls match {
-        //case _ :: Nil => acc
+        case _ :: Nil => acc
         case Nil => acc
         case x :: y :: tail => f(tail, acc ++ List(y, x))
       }
@@ -54,25 +45,23 @@ object StringoPermute {
     f(ls, acc)
   }
 
-  def permuteStringList(ls: List[Char], num: Int): List[Char] = {
-    val acc = List[Char]()
+  def permuteStringBuffer (ls: List[Char], num: Int): ListBuffer[Char] = {
+    val acc = ListBuffer[Char]()
 
     @tailrec
-    def f(ls: List[Char], acc: List[Char]): List[Char] = {
+    def f (ls: List[Char], acc: ListBuffer[Char]): ListBuffer[Char] = {
       ls match {
-        //case _ :: Nil => acc
+        case _ :: Nil => acc
         case Nil => acc
-        case x :: y :: tail => f(tail, acc ++ List(y, x))
+        case x :: y :: tail => f(tail, acc ++ ListBuffer(y, x))
       }
     }
 
     f(ls, acc)
   }
 
-
-  def builtin_Permutation(list: List[Char], num: Int): List[Char] = {
-    list.grouped(num).map(x => x.reverse).toList.flatten
-
+  def builtin_Permutation (list: List[Char], num: Int): List[Char] = {
+    list.grouped(num).flatMap(x => x.reverse).toList
   }
 
 }

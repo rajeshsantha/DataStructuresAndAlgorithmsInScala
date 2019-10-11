@@ -19,16 +19,16 @@ object MergeSortGeneric {
     val sortedList_ASC = mergetSort_ASC_int(inputList)
     val sortedList_DESC = mergetSort_DESC_int(inputList)
 
-    println(sortedList_ASC)
-    println(sortedList_DESC)
-    //val inputListDouble = inputList.asInstanceOf[List[Double]]
+    println(sortedList_ASC)  // List(1, 2, 3, 5, 6, 7, 8, 9)
+    println(sortedList_DESC) // List(9, 8, 7, 6, 5, 3, 2, 1)
+
     val inputListDouble = inputList.map(_.toDouble)
 
     val sortedList_ASC_Double = mergetSort_ASC_Double(inputListDouble)
     val sortedList_DESC_Double = mergetSort_DESC_Double(inputListDouble)
 
-    println(sortedList_ASC_Double)
-    println(sortedList_DESC_Double)
+    println(sortedList_ASC_Double)   // List(1.0, 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 9.0)
+    println(sortedList_DESC_Double)  // List(9.0, 8.0, 7.0, 6.0, 5.0, 3.0, 2.0, 1.0)
 
 
   }

@@ -40,12 +40,11 @@ object DecimalToBinary {
   }
 
   def convertDecimalToBinaryFunctional(n: Int): String = {
-    val divideBy2 = Iterator.iterate(n)(_ / 2)
-    divideBy2
-      .takeWhile(_ > 0)
-      .map(_ % 2)
-      .mkString
-      .reverse
+      Iterator.iterate(n)(_ / 2)
+    .takeWhile(_>0)
+    .map(_%2)
+    .mkString
+    .reverse
   }
 
 }

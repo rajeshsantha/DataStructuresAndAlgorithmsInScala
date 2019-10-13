@@ -14,20 +14,20 @@ import scala.annotation.tailrec
 
 object ReverseList extends App {
 
-  def reverseListBuiltIn[A](ls: List[A]): List[A] = ls.reverse
+  def reverseListBuiltIn[A] (ls: List[A]): List[A] = ls.reverse
 
 
-  def reverseList_Recursive[A](ls: List[A]): List[A] = {
+  def reverseList_Recursive[A] (ls: List[A]): List[A] = {
     ls match {
       case Nil => Nil
       case x :: tail => reverseList_Recursive(tail) ::: List(x)
     }
   }
 
-  def reverseList_TailRecursive[A](ls: List[A]): List[A] = {
+  def reverseList_TailRecursive[A] (ls: List[A]): List[A] = {
 
     @tailrec
-    def reverseList_Helper(finalList: List[A], InputList: List[A]): List[A] =
+    def reverseList_Helper (finalList: List[A], InputList: List[A]): List[A] =
       InputList match {
         case Nil => finalList
         case x :: tail => reverseList_Helper(x :: finalList, tail)
@@ -36,7 +36,7 @@ object ReverseList extends App {
     reverseList_Helper(Nil, ls)
   }
 
-  def reverseFunctional[A](ls: List[A]): List[A] = ls.foldLeft(List[A]()) { (x, y) => y :: x }
+  def reverseFunctional[A] (ls: List[A]): List[A] = ls./:(List[A]()) { (x, y) => y :: x }
 
 
 }

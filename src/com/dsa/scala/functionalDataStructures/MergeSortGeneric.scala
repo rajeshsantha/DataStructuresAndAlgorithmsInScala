@@ -30,7 +30,6 @@ object MergeSortGeneric {
     println(sortedList_ASC_Double)   // List(1.0, 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 9.0)
     println(sortedList_DESC_Double)  // List(9.0, 8.0, 7.0, 6.0, 5.0, 3.0, 2.0, 1.0)
 
-
   }
 
 

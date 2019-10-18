@@ -3,7 +3,7 @@ package com.concept.scala
 import scala.collection.mutable
 
 /**
-  * WordCount code To test the scala setup.
+  * WordCount code To test the scala setup
   */
 object WordCount extends App {
 

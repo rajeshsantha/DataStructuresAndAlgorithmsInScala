@@ -1,6 +1,6 @@
 package com.concept.scala
 /**
-* @author Rajesh
+* @author Rajesh Santha
 * @example Imperative programming vs functional programming vs using stack
 */
 object DecimalToBinary {

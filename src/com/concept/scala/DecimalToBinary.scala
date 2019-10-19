@@ -9,6 +9,8 @@ object DecimalToBinary {
     //println(convertDecimalToBinaryString(8))
     //println(convertDecimalToBinaryStack(8))
     println(convertDecimalToBinaryFunctional(183))
+    println(convertDecimalToBinaryFunctional(7))
+
 
   }
 
@@ -34,7 +36,6 @@ object DecimalToBinary {
       println(stack)
       x = x / 2
     }
-    //stack.reverse.mkString
     stack.mkString
 
   }

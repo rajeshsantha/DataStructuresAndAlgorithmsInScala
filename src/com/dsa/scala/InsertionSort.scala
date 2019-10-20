@@ -8,7 +8,6 @@ object InsertionSort {
     println("Unsorted array")
 
     var i = 0
-    //for (i <- intArray) println(i)
 
     for (firstUnsortedIndex <- 1 until intArray.length by 1) {
       var newElement = intArray(firstUnsortedIndex)

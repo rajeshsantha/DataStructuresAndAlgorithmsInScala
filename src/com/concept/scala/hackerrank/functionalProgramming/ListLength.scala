@@ -30,6 +30,6 @@ object ListLength extends App {
     }
     couter
   }
-
+def f_functional(ls:List[Int])= ls.foldLeft(0){(c,x)=> c+1}
 
 }

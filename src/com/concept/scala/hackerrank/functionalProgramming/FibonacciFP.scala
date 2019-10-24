@@ -2,6 +2,15 @@ package com.concept.scala.hackerrank.functionalProgramming
 
 import scala.collection.mutable.ListBuffer
 
+/**
+  * @author Rajesh
+  * @version 1.0 (No further revison)
+  * @todo
+  * For each test case, print Fib(n) % 10^8+7
+  *  @see https://www.hackerrank.com/challenges/fibonacci-fp/problem
+  * @note Use functional programming.
+  *
+  */
 object FibonacciFP {
   val streamFib: Stream[BigInt] = BigInt(0) #:: BigInt(1) #:: streamFib.zip(streamFib.tail).map(t => t._1 + t._2)
 
@@ -21,7 +30,7 @@ object FibonacciFP {
     */
 
     for (_ <- 1 to num)
-      listInput.append(scala.io.StdIn.readLine().toInt)
+      listInput.append(stdin.readLine().toInt)
 
     listInput.map(x => fib(x, streamFib) % mod).foreach(println)
 

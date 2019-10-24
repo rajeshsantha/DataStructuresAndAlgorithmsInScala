@@ -5,7 +5,7 @@ import scala.io.StdIn
 
 /**
   * @author Rajesh
-  * @version 1.0 (functional implementation to be done)
+  * @version 1.1 (functional implementation completed)
   * @todo Rotate the string
   * @example Input string => abc ,then output string should be =>bca cab abc
   * @note Use functional programming.
@@ -16,8 +16,10 @@ object StringRotator {
   def main (args: Array[String]): Unit = {
     val listInput: ListBuffer[String] = ListBuffer()
     for (_ <- 1 to scala.io.StdIn.readLine.trim.toInt) listInput append StdIn.readLine
-
+    // imperative + recursion
     listInput map (rotateString(_) mkString " ") foreach println
+    // functional
+    listInput map (rotateString_functional(_) mkString " ") foreach println
 
   }
 
@@ -44,12 +46,11 @@ object StringRotator {
     if (lengthOfString > 1) f(inputCharList, resultBuffer)
     else resultBuffer
   }
+
+  def rotateString_functional (inputString: String): IndexedSeq[String] =
+    (1 to (inputString length))
+      .map(char => (inputString takeRight ((inputString length) - char)) + (inputString take char))
+
+
 }
 
-
-/*
-abcd
-a bcd => bcda
-bcd
-
- */

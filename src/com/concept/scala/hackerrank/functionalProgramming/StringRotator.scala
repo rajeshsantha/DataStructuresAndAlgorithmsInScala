@@ -5,7 +5,7 @@ import scala.io.StdIn
 
 /**
   * @author Rajesh
-  * @version 1.0 (functional implementation to be done)
+  * @version 1.1 (functional implementation completed)
   * @todo Rotate the string
   * @example Input string => abc ,then output string should be =>bca cab abc
   * @note Use functional programming.
@@ -15,41 +15,42 @@ import scala.io.StdIn
 object StringRotator {
   def main (args: Array[String]): Unit = {
     val listInput: ListBuffer[String] = ListBuffer()
-    for (_ <- 1 to scala.io.StdIn.readLine.trim.toInt) listInput.append(StdIn.readLine())
-
-    listInput.map(rotateString(_).mkString(" ")).foreach(println)
+    for (_ <- 1 to scala.io.StdIn.readLine.trim.toInt) listInput append StdIn.readLine
+    // imperative + recursion
+    listInput map (rotateString(_) mkString " ") foreach println
+    // functional
+    listInput map (rotateString_functional(_) mkString " ") foreach println
 
   }
 
-  def rotateString (str: String): ListBuffer[String] = {
-    val inputStrList = str.toList
-    val res = ListBuffer[String]()
-    var len = str.length
-    if (len == 1) res.append(str)
+  def rotateString (inputString: String): ListBuffer[String] = {
+    val inputCharList = inputString toList
+    val resultBuffer = ListBuffer[String]()
+    var lengthOfString = (inputString length)
+    if (lengthOfString == 1) resultBuffer append inputString
 
     def f (ls: List[Char], result: ListBuffer[String]): ListBuffer[String] = {
-      if (len >= 1) {
+      if (lengthOfString >= 1) {
         ls match {
-          case x :: tail => {
-            len -= 1
-            val tempString = tail.mkString + x.toString
-            result.append(tempString)
-            f(tempString.toList, result)
+          case firstChar :: tail => {
+            lengthOfString -= 1
+            val tempString = (tail mkString) concat (firstChar toString)
+            result append tempString
+            f(tempString toList, result)
           }
         }
       }
       result
     }
 
-    if (len > 1) f(inputStrList, res)
-    else res
+    if (lengthOfString > 1) f(inputCharList, resultBuffer)
+    else resultBuffer
   }
+
+  def rotateString_functional (inputString: String): IndexedSeq[String] =
+    (1 to (inputString length))
+      .map(char => (inputString takeRight ((inputString length) - char)) + (inputString take char))
+
+
 }
 
-
-/*
-abcd
-a bcd => bcda
-bcd
-
- */

@@ -49,7 +49,7 @@ object StringRotator {
 
   def rotateString_functional (inputString: String): IndexedSeq[String] =
     (1 to (inputString length))
-      .map(char => (inputString takeRight ((inputString length) - char)) + (inputString take char))
+      .map(index => (inputString takeRight ((inputString length) - index)) + (inputString take index))
 
 
 }

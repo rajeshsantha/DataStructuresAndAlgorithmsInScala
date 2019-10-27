@@ -5,7 +5,6 @@ import scala.io.StdIn
 
 /**
   * @author Rajesh
-  * @version 1.1 (functional implementation completed)
   * @todo Rotate the string
   * @example Input string => abc ,then output string should be =>bca cab abc
   * @note Use functional programming.

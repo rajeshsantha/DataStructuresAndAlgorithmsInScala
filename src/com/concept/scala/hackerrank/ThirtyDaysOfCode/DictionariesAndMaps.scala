@@ -10,7 +10,7 @@ import scala.collection.mutable.{ListBuffer, Map}
   * @note Use functional programming, avoid imperative programming.
   *
   */
-object DictionariesAndMaps extends {
+object DictionariesAndMaps  {
   def main (args: Array[String]): Unit = {
 
 

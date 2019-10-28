@@ -28,13 +28,13 @@ object DictionariesAndMaps extends {
       //totalList = totalList += outputReq
       totalList += outputReq
     }
-    totalList.foreach(x => getFormattedValue(x))
+    totalList.foreach(getFormattedValue(_))
 
     def getFormattedValue (x: String) = if (totalMap.contains(x)) println(x + "=" + totalMap(x)) else println("Not found")
 
   }
 
-  // Below code for satisfy the testcase 1 with 10k input.
+  // Below code to satisfy the testcase 1 with 10k input.
   import scala.collection.mutable
 
   def otherSolution (args: Array[String]) {
@@ -55,7 +55,6 @@ object DictionariesAndMaps extends {
       } else {
         println("Not found")
       }
-      //query = sc.nextLine
     }
   }
 

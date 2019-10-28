@@ -21,8 +21,6 @@ object FactorialSolution {
 
         val result = factorial(n)
 
-        printWriter.println(result)
-
-        printWriter.close()
+        println(result)
     }
 }

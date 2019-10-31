@@ -4,7 +4,7 @@ import scala.collection.mutable.HashSet
 import scala.io.StdIn._
 
 /**
-  * @author Rajesh Santha
+  * @author Rajesh
   * @todo identifying a relation which represents a valid function. i.e "Is f(x)=x ?" 
   * @note Use functional programming, avoid imperative programming (no Vars, no loops, no side effects)
   * @see https://www.hackerrank.com/challenges/functions-or-not/problem

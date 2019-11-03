@@ -2,7 +2,6 @@ package com.concept.scala.hackerrank.functionalProgramming
 
 /**
   * @author Rajesh Santha
-  * @version 1.0
   * @note Use functional programming, avoid imperative programming.(follwed by Version 1.1 and 1.2)
   *       This one is a one-linere in functional programming with the help of regular expression in scala. 
   * @see https://www.hackerrank.com/challenges/string-compression/problem

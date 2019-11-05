@@ -3,7 +3,6 @@ import scala.annotation.tailrec
 
 /**
   * @author Rajesh Santha
-  * @version 1.0
   * @todo print pascal triangle.
   * @note Use functional programming, avoid imperative programming (no Vars, no loops, no side effects)
   * @see https://www.hackerrank.com/challenges/pascals-triangle/problem

@@ -3,7 +3,6 @@ package com.concept.scala.hackerrank.functionalProgramming
 import scala.io.StdIn
 /**
   * @author Rajesh Santha
-  * @version 1.0 (No further revison)
   * @todo
   * You are given a list. Return the sum of odd elements from the given list.
   *

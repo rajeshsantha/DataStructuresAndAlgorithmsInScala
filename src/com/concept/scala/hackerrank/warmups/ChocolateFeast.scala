@@ -1,6 +1,7 @@
 package com.concept.scala.hackerrank.warmups
-//https://www.hackerrank.com/challenges/chocolate-feast/problem
+
 /**
+  * @see https://www.hackerrank.com/challenges/chocolate-feast/problem
   * 43203 / 60 = 720 chocolates ( 3 dollars left and you cannot buy any more chocolate for 3 dollar )
   *
   * 720 / 5 = 144 chocolates ( we can buy 144 chocolates from 720 wrappers )

@@ -1,10 +1,10 @@
 package com.concept.scala
+
 /**
-* @author Rajesh Santha
-* @example Imperative programming vs functional programming vs using stack
-*/
+  * @example Imperative programming vs functional programming vs using stack
+  */
 object DecimalToBinary {
-  def main(args: Array[String]): Unit = {
+  def main (args: Array[String]): Unit = {
 
     //println(convertDecimalToBinaryString(8))
     //println(convertDecimalToBinaryStack(8))
@@ -15,7 +15,7 @@ object DecimalToBinary {
   }
 
 
-  def convertDecimalToBinaryString(n: Int): String = {
+  def convertDecimalToBinaryString (n: Int): String = {
     var x = n
     var binaryString = ""
     while (x > 0) {
@@ -26,7 +26,7 @@ object DecimalToBinary {
 
   }
 
-  def convertDecimalToBinaryStack(n: Int): String = {
+  def convertDecimalToBinaryStack (n: Int): String = {
     var x = n
     var stack = List[Int]()
     while (x > 0) {
@@ -40,12 +40,12 @@ object DecimalToBinary {
 
   }
 
-  def convertDecimalToBinaryFunctional(n: Int): String = {
-      Iterator.iterate(n)(_ / 2)
-    .takeWhile(_>0)
-    .map(_%2)
-    .mkString
-    .reverse
+  def convertDecimalToBinaryFunctional (n: Int): String = {
+    Iterator.iterate(n)(_ / 2)
+      .takeWhile(_ > 0)
+      .map(_ % 2)
+      .mkString
+      .reverse
   }
 
 }

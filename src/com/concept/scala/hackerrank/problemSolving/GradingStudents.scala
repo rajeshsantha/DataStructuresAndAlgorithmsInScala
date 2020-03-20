@@ -2,19 +2,23 @@ package com.concept.scala.hackerrank.problemSolving
 
 import scala.io.StdIn
 
+/***
+  * @see https://www.hackerrank.com/challenges/grading/problem
+  */
+
 object GradingStudents {
   def main(args: Array[String]): Unit = {
 
-val gradesArray = Array(73,67,38,33)
-/*
+//val gradesArray = Array(73,67,38,33)
+
     val gradesCount = StdIn.readLine.trim.toInt
     val grades = Array.ofDim[Int](gradesCount)
     for (i <- 0 until gradesCount) {
       val gradesItem = StdIn.readLine.trim.toInt
       grades(i) = gradesItem
     }
-*/
-    val result = gradingStudents(gradesArray)
+
+    val result = gradingStudents(grades)
 
     println(result.mkString("\n"))
 

@@ -50,4 +50,10 @@ object MoveZeroes {
     println("Final array result is " + nums.mkString(" "))
 
   }
+
+  def moveZerosFunctional (nums: Array[Int]): Unit = {
+
+
+
+  }
 }

@@ -3,6 +3,7 @@ package com.concept.scala.leetcode30days
 import scala.collection.mutable.ListBuffer
 
 /** *
+  * Day 5
   *
   * @see https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/submissions/
   *      201 / 201 test cases passed.

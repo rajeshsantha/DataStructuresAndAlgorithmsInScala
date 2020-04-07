@@ -5,7 +5,6 @@ import scala.collection.mutable
 
 /**
   * @author Rajesh
-  * @version 1.0
   * @todo String Reductions based on the input
   * @usecase Implement the solution in all 3 ways.
   *          i)  With Built-in libraries

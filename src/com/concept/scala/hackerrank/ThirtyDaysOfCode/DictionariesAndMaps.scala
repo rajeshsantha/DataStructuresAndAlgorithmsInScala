@@ -3,8 +3,7 @@ package com.concept.scala.hackerrank.ThirtyDaysOfCode
 import scala.collection.mutable.{ListBuffer, Map}
 
 /**
-  * @author Rajesh Santha
-  * @version 1.1 
+  * @author Rajesh
   * @todo part of 30 days of code challenge. (Arrays)
   * @see https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem
   * @note Use functional programming, avoid imperative programming.

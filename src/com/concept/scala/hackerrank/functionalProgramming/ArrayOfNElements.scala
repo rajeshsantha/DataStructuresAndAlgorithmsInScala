@@ -3,8 +3,7 @@ package com.concept.scala.hackerrank.functionalProgramming
 import scala.io.StdIn
 
 /**
-  * @author Rajesh Santha
-  * @version 1.0 (No further revison)
+  * @author Rajesh
   * @todo
   * Create an array of  integers, where the value of  is passed as an argument to the pre-filled function in your editor.
   * This challenge uses a custom checker.

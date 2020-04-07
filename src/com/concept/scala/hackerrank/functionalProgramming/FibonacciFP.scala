@@ -4,7 +4,6 @@ import scala.collection.mutable.ListBuffer
 
 /**
   * @author Rajesh
-  * @version 1.0 (No further revison)
   * @todo
   * For each test case, print Fib(n) % 10^8+7
   *  @see https://www.hackerrank.com/challenges/fibonacci-fp/problem

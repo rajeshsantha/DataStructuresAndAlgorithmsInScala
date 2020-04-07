@@ -1,7 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 /**
-  * @author Rajesh Santha
+  * @author Rajesh
   * @todo Compute the Area of a Polygon (N sides)
   * @note Use functional programming, avoid imperative programming.
   * @see https://www.hackerrank.com/challenges/lambda-march-compute-the-area-of-a-polygon/problem

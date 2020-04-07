@@ -4,7 +4,6 @@ import scala.annotation.tailrec
 
 /**
   * @author Rajesh
-  * @version 1.2
   * @todo String mingling
   * @example if string1 is "abcd", string2 is "1234", output should be "a1b2c3d4"
   * @usecase Implement the solution in all 3 ways.

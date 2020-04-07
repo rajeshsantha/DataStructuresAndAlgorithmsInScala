@@ -1,8 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 /**
-  * @author Rajesh Santha
-  * @version 1.0 (No further revison)
+  * @author Rajesh
   * @todo
   * Update the values of a list with their absolute values. (do not use ABS)
   *

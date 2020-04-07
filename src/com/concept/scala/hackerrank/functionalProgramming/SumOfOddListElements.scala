@@ -1,11 +1,9 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
-import scala.io.StdIn
 /**
-  * @author Rajesh Santha
+  * @author Rajesh
   * @todo
   * You are given a list. Return the sum of odd elements from the given list.
-  *
   * @note Use functional programming, avoid imperative programming.
   *
   */
@@ -17,7 +15,7 @@ object SumOfOddListElements extends App {
 
   println(f(list1))
 
-  def f(list: List[Int]): Int = (for (i <- list.indices.filter(_ % 2 != 0)) yield list(i)).sum
+  def f (list: List[Int]): Int = (for (i <- list.indices.filter(_ % 2 != 0)) yield list(i)).sum
 
 
 }

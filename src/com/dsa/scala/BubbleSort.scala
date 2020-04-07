@@ -1,7 +1,5 @@
 package com.dsa.scala
-/**
- * @author Rajesh
- **/
+
 object BubbleSort {
 
   def main (args: Array[String]): Unit = {

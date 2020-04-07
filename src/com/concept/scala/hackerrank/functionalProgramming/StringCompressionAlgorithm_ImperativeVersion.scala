@@ -4,8 +4,7 @@ import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 
 /**
-  * @author Rajesh Santha
-  * @version 1.0
+  * @author Rajesh
   * @note Use functional programming, avoid imperative programming.(follwed by Version 1.1 and 1.2)
   *       This one uses tail recursion in imperative programming.(check StringCompressionAlgorithm_FunctionalVersion for functional solution)
   * @see https://www.hackerrank.com/challenges/string-compression/problem

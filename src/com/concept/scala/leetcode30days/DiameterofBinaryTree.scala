@@ -36,6 +36,9 @@ object DiameterofBinaryTree {
   var diameter_max = 0
 
   def diameterOfBinaryTree_Solution1 (root: TreeNode): Int = {
+
+    diameter_max = 0
+
     height(root);
     diameter_max;
   }

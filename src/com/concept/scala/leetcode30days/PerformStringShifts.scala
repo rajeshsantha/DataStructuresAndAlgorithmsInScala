@@ -30,17 +30,23 @@ package com.concept.scala.leetcode30days
   *      Explanation:
   *      [1,1] means shift to right by 1. "abcdefg" -> "gabcdef"
   *      [1,1] means shift to right by 1. "gabcdef" -> "fgabcde"
-  *      [0,2] means shift to left by 2. "fgabcde" -> "abcdefg"
+  *      [0,2] means shift to left by 2.  "fgabcde" -> "abcdefg"
   *      [1,3] means shift to right by 3. "abcdefg" -> "efgabcd"
+  *
+  *
+  *      31 / 31 test cases passed.
+  *      Status: Accepted
+  *      Runtime: 460 ms
+  *      Memory Usage: 50.2 MB
   *
   *
   */
 object PerformStringShifts {
   def main(args: Array[String]): Unit = {
 
-    //val rotationList = Array(Array(1, 1), Array(1, 1), Array(0, 2), Array(1, 3))
+
     val rotationList2 = Array(Array(0, 1), Array(1, 2))
-    // println(s"final result is ${stringShift("abcdefg",rotationList)}")
+
     println(s"final result is ${stringShift("abc", rotationList2)}")
   }
 

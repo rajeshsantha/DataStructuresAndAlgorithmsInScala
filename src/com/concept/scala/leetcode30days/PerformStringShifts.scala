@@ -40,14 +40,13 @@ package com.concept.scala.leetcode30days
   *      Memory Usage: 50.2 MB
   *
   *
+  *
   */
 object PerformStringShifts {
 
   def main(args: Array[String]): Unit = {
 
-
     val rotationList2 = Array(Array(0, 1), Array(1, 2))
-
     println(s"final result is ${stringShift("abc", rotationList2)}")
 
   }

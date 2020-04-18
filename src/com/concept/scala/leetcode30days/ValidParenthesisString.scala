@@ -28,6 +28,8 @@ package com.concept.scala.leetcode30days
   *      Note:
   *      The string size will be in the range [1, 100].
   *
+  *      Runtime: 420 ms, faster than 100.00% of Scala online submissions for Valid Parenthesis String.
+  *      Memory Usage: 49.7 MB, less than 100.00% of Scala online submissions for Valid Parenthesis String.
   *
   *      58 / 58 test cases passed.
   *      Status: Accepted
@@ -45,28 +47,28 @@ object ValidParenthesisString {
 
   def checkValidString (s: String): Boolean = {
 
-    var l = 0
-    var h = 0
+    var left = 0
+    var stars = 0
 
-    for (c <- s.toCharArray) {
-      if (c == '(') {
-        l += 1
-        h += 1
+    for (char <- s.toCharArray) {
+      if (char == '(') {
+        left += 1
+        stars += 1
       }
-      else if (c == ')') {
-        h -= 1
-        if (l > 0) {
-          l -= 1
+      else if (char == ')') {
+        stars -= 1
+        if (left > 0) {
+          left -= 1
         }
       }
       else {
-        h += 1
-        if (l > 0) {
-          l -= 1
+        stars += 1
+        if (left > 0) {
+          left -= 1
         }
       }
-      if (h < 0) return false
+      if (stars < 0) return false
     }
-    l == 0
+    left == 0
   }
 }

@@ -77,7 +77,7 @@ object LeftmostColumnWithLeastOne extends BinaryMatrix {
     * @return left Most Column that contains One
     *
     **/
-  def leftMostColumnWithOne_Iterative(binaryMatrix: BinaryMatrix): Int = {
+  def leftMostColumnWithOne_Iterative (binaryMatrix: BinaryMatrix): Int = {
     val arr = binaryMatrix.dimensions()
     val (rows, col) = (arr(0), arr(1))
 
@@ -110,7 +110,7 @@ object LeftmostColumnWithLeastOne extends BinaryMatrix {
     * @param binaryMatrix binary sorted array
     * @return left Most Column that contains One
     */
-  def leftMostColumnWithOneByRecursion(binaryMatrix: BinaryMatrix): Int = {
+  def leftMostColumnWithOneByRecursion (binaryMatrix: BinaryMatrix): Int = {
 
     val arr = binaryMatrix.dimensions()
     if (arr.isEmpty) return -1
@@ -119,7 +119,7 @@ object LeftmostColumnWithLeastOne extends BinaryMatrix {
 
     import scala.annotation.tailrec
     @tailrec
-    def helperLeftMostColumnWithOne(binaryMatrix: BinaryMatrix, result: Int, currentRow: Int, currentColumn: Int): Int = {
+    def helperLeftMostColumnWithOne (binaryMatrix: BinaryMatrix, result: Int, currentRow: Int, currentColumn: Int): Int = {
 
       if (currentColumn < 0 || currentRow >= rows || result == 0) return result
 
@@ -141,8 +141,8 @@ object LeftmostColumnWithLeastOne extends BinaryMatrix {
 // You should not implement it, or speculate about its implementation
 
 class BinaryMatrix {
-  def get(x: Int, y: Int): Int = {}
+  def get (x: Int, y: Int): Int = ???
 
-  def dimensions(): Array[Int] = {}
+  def dimensions (): Array[Int] = ???
 }
 

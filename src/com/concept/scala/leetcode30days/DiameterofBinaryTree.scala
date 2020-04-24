@@ -25,17 +25,17 @@ package com.concept.scala.leetcode30days
   *
   */
 // Definition for a binary tree node.
-class TreeNode (var _value: Int) {
+private class TreeNode (var _value: Int) {
   var value: Int = _value
-  var left: TreeNode = null
-  var right: TreeNode = null
+  var left: TreeNode2 = null
+  var right: TreeNode2 = null
 }
 
 object DiameterofBinaryTree {
 
   var diameter_max = 0
 
-  def diameterOfBinaryTree_Solution1 (root: TreeNode): Int = {
+  def diameterOfBinaryTree_Solution1 (root: TreeNode2): Int = {
 
     diameter_max = 0
 
@@ -44,7 +44,7 @@ object DiameterofBinaryTree {
   }
 
   // java eq
-  def height (node: TreeNode): Int = {
+  def height (node: TreeNode2): Int = {
     if (node == null) return -1
 
     if (node == null) {
@@ -58,13 +58,13 @@ object DiameterofBinaryTree {
   }
 
 
-  def diameterOfBinaryTree (root: TreeNode): Int = {
+  def diameterOfBinaryTree (root: TreeNode2): Int = {
     if (root == null) 0
     else
       maxDepth(root.left) + maxDepth(root.right)
   }
 
-  def maxDepth (root: TreeNode): Int = {
+  def maxDepth (root: TreeNode2): Int = {
     if (root == null) 0
     else
       math.max(depthleftCounter(root, 0), rightDepthCounter(root, 0))
@@ -72,14 +72,14 @@ object DiameterofBinaryTree {
   }
 
 
-  def depthleftCounter (node: TreeNode, depthLCount: Int): Int = {
+  def depthleftCounter (node: TreeNode2, depthLCount: Int): Int = {
     if (node == null) depthLCount
     else
       depthleftCounter(node.left, depthLCount + 1)
 
   }
 
-  def rightDepthCounter (node: TreeNode, depthRCount: Int): Int = {
+  def rightDepthCounter (node: TreeNode2, depthRCount: Int): Int = {
     if (node == null) depthRCount
     else
       rightDepthCounter(node.right, depthRCount + 1)

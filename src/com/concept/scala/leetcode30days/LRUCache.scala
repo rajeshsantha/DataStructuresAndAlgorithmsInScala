@@ -84,17 +84,16 @@ class LRUCache(_capacity: Int) {
   val hashmap = HashMap[Int, Int]() // to store the value for it's respective key
   val listbuffer = ListBuffer[Int]() // To store the order
 
-  val capacityOfMap = _capacity //given size with which we create the MAP
-  var sizeOfListBuffer = 0 //size of listBuffer is dynamic so we have to track it's size to see if we are exceeding _capacity value
+  val capacityOfMap = _capacity //given size with which we can control the size of HashMap (mutable HashMap size is dynamic so we need an additional variable to track the size)
+  var sizeOfListBuffer = 0 //same as above line ,size of listBuffer is dynamic so we have to track it's size to see if we are exceeding _capacity value
 
   def get(key: Int): Int = {
-    var result = -1 //the value to return of the key is not found
+    var result = -1 //the value to return, if the key is not found in the hashmap
     if (hashmap.contains(key)) {
-      //if the key you are looking for is already in the map
-      result = hashmap(key) // get the value of it's key
+      //if the key you are looking for is already in the hashmap
+      result = hashmap(key) // then get the value of that key
       //move the key to the end of listbuffer
-      // by removing the listbuffer index of the key + then appending the key to listbuffer at the end
-      addTheKeyAtLast(key)
+      addKeyAtTheEnd(key)
 
 
     }
@@ -104,19 +103,19 @@ class LRUCache(_capacity: Int) {
   def put(key: Int, value: Int) {
 
     if (hashmap.contains(key)) {
-      // update the key's value in map
+      // update the key's value in hashmap
       hashmap(key) = value
-      //update it's index in listbuffer (by removing it and addding it in the end .. i.e remove+{appending outside of this IF block})
-      addTheKeyAtLast(key)
+      // add  the key at the very end of listbuffer
+      addKeyAtTheEnd(key)
     } else {
-      //since key is not present in  map we have to make a decision if it is exceeding the capacity of map
+      //since key is not present in  hashmap we have to make a decision for the edge case, i.e
+      // i.e "What if adding one more element would exceed the capacity of hashmap?"
       if (capacityOfMap == sizeOfListBuffer) {
-        //you cannot PUT an additonal value into map when it is already at it's capacity
-
+        //you cannot PUT an additonal value into hashmap when it is already at it's full capacity.
         // So decide the last recent used value. {It present at the begining of the listbuffer}
         val lastRecentlyUsedIndex = listbuffer.head
 
-        //so remove an item from the begining . i.e remove the head from list   {REMOVE THE INDEX}
+        //so remove lastRecentlyUsedIndex from the begining . i.e remove the head from list   {REMOVE THE INDEX}
         listbuffer -= lastRecentlyUsedIndex
 
         //remove LRU key (listbuffer head's key ) and it's value {REMOVE THE KEY VALUE PAIR}
@@ -128,15 +127,15 @@ class LRUCache(_capacity: Int) {
       //add the index in listbuffer
       listbuffer.append(key)
     }
-    // add/update the key with new value //  "hashMap(key)= value" will create a keyValue pair if key is not present else update the key's value
+    // add/update(upsert) the key with new value //  "hashMap(key)= value" will create a keyValue pair if key is not present else update the key's value
     hashmap(key) = value
-    //append the key at the end of listbuffer
 
   }
 
-  def addTheKeyAtLast(key: Int) = {
-
+  def addKeyAtTheEnd(key: Int) = {
+    //add Key At The End by removing the listbuffer index of the key
     listbuffer.remove(listbuffer.indexOf(key))
+    // then appending the key to listbuffer at the end
     listbuffer.append(key)
   }
 

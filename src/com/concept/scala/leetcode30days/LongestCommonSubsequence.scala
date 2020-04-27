@@ -57,8 +57,8 @@ object LongestCommonSubsequence {
     *
     * 37 / 37 test cases passed.
     * Status: Accepted
-    * Runtime: 732 ms
-    * Memory Usage: 66.6 MB
+    * Runtime: 592 ms
+    * Memory Usage: 66.2 MB
     *
     * @param text1 first string input
     * @param text2 second string input
@@ -69,12 +69,11 @@ object LongestCommonSubsequence {
 
     val (len1, len2) = (text1.length, text2.length)
     val table = Array.ofDim[Int](len1 + 1, len2 + 1)
-    for (i <- 0 to len1) {
-      for (j <- 0 to len2) {
-        if (i == 0 || j == 0) table(i)(j) = 0
-        else if (text1(i - 1) == text2(j - 1)) table(i)(j) = table(i - 1)(j - 1) + 1
-        else table(i)(j) = math.max(table(i - 1)(j), table(i)(j - 1))
-      }
+    for (i <- 0 to len1;
+         j <- 0 to len2) {
+      if (i == 0 || j == 0) table(i)(j) = 0
+      else if (text1(i - 1) == text2(j - 1)) table(i)(j) = table(i - 1)(j - 1) + 1
+      else table(i)(j) = math.max(table(i - 1)(j), table(i)(j - 1))
     }
     table(len1)(len2)
 
@@ -84,12 +83,11 @@ object LongestCommonSubsequence {
 
     val (len1, len2) = (text1.length, text2.length)
     val table = Array.ofDim[Int](len1 + 1, len2 + 1)
-    for (i <- 0 to len1) {
-      for (j <- 0 to len2) {
-        if (i == 0 || j == 0) table(i)(j) = 0
-        else if (text1(i - 1) == text2(j - 1)) table(i)(j) = table(i - 1)(j - 1) + 1
-        else table(i)(j) = math.max(table(i - 1)(j), table(i)(j - 1))
-      }
+    for (i <- 0 to len1; j <- 0 to len2) {
+      if (i == 0 || j == 0) table(i)(j) = 0
+      else if (text1(i - 1) == text2(j - 1)) table(i)(j) = table(i - 1)(j - 1) + 1
+      else table(i)(j) = math.max(table(i - 1)(j), table(i)(j - 1))
+
     }
     table
 

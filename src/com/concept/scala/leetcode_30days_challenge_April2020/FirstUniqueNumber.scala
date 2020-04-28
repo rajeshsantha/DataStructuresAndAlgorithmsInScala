@@ -106,6 +106,8 @@ class FirstUniqueNumber (_nums: Array[Int]) {
     else set_Of_UniqueValues add value
   }
 
+ // addByCaseMatch is just an optional implementation for above "add()" by using case match statements. Not part of an execution though
+ 
   def addByCaseMatch (value: Int) {
 
     if (set_Of_DuplicateValues contains value) return

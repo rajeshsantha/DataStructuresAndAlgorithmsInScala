@@ -1,4 +1,4 @@
-package com.concept.scala.leetcode30days
+package com.concept.scala.leetcode_30days_challenge_April2020
 
 /** **
   * Day 23
@@ -35,7 +35,8 @@ object BitwiseANDNumbersRange {
   }
 
   def rangeBitwiseAnd (m: Int, n: Int): Int = {
-
+    if (m == n) return m
+    if (m == 0 || n == 0) return 0
     (m to n).foldLeft(if (m == n) m else m + 1)((a, b) => {
       val res = a & b
       if (res == 0) return 0

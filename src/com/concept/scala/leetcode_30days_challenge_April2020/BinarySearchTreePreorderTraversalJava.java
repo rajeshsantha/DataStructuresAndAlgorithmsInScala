@@ -1,4 +1,4 @@
-package com.concept.scala.leetcode30days;
+package com.concept.scala.leetcode_30days_challenge_April2020;
 
 
 /****

@@ -25,7 +25,7 @@ package com.concept.scala.leetcode_30days_challenge_April2020
   *
   */
 // Definition for a binary tree node.
-private class TreeNodeTree (var _value: Int) {
+private class TreeNodeCustom(var _value: Int) {
   var value: Int = _value
   var left: TreeNode2 = null
   var right: TreeNode2 = null

@@ -1,7 +1,7 @@
 package com.concept.scala.leetcode_30days_challenge_April2020
 
 /** **
-  * Day 17
+  * Day 18
   *
   * @see https://leetcode.com/problems/minimum-path-sum/
   *      OR

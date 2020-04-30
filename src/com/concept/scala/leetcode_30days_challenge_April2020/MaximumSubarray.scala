@@ -3,6 +3,9 @@ package com.concept.scala.leetcode_30days_challenge_April2020
 object MaximumSubarray {
 
   /**
+    * Day 3
+    * @see https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3285/
+    *
     * 202 / 202 test cases passed.
     * Status: Accepted
     * Runtime: 488 ms

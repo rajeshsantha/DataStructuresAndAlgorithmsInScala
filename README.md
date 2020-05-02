@@ -15,6 +15,7 @@
 |Package|What's Illustrated|
 |---|---|
 |[Leetcode30days Challenge April 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_April2020)| Solutions to LeetCode 30 days challenge **in progress** :arrow_forward: *(April 1st, 2020 to April 30, 2020)*|
+|[Leetcode30days Challenge May 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_May2020)| Solutions to LeetCode 30 days challenge **in progress** :arrow_forward: *(May 1st, 2020 toMay 30, 2020)*|
 |[NinetyNineProblems](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/NinetyNineProblems)|Solutions to  "S-99: Ninety-Nine Scala Problems"  **in progress** :arrow_forward: | 
 |[hackerrank.functionalProgramming](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/functionalProgramming)|Solutions to  Hackerrank funtional programming section using scala :soon: | 
 |[hackerrank.problemSolving](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/problemSolving)|Solutions to  Hackerrank Problem Solving section :soon: |

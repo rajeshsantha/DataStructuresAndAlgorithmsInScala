@@ -5,7 +5,7 @@ package com.concept.scala.leetcode_30days_challenge_May2020
   * Day 2
   *
   * @see https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3317/
-  *      OR
+  *      (OR)
   *      https://leetcode.com/problems/jewels-and-stones/
   *
   *      You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
@@ -23,9 +23,6 @@ package com.concept.scala.leetcode_30days_challenge_May2020
   *
   *      S and J will consist of letters and have length at most 50.
   *      The characters in J are distinct.
-  *
-  *
-  *
   *
   *      254 / 254 test cases passed.
   *      Status: Accepted

@@ -1,5 +1,7 @@
 package com.concept.scala.leetcode_30days_challenge_May2020
 
+import com.concept.scala.RunTimeCalculation.calculateRunTime
+
 /** **
   *
   * Day 2
@@ -35,10 +37,19 @@ object JewelsAndStones {
     val S = "aA"
     val J = "aAAbbbb"
 
-    println(numJewelsInStones_imperative(S, J))
-    println(numJewelsInStones_byFold_functional(S, J))
-    println(numJewelsInStones_functional(S, J))
+    /*    println(numJewelsInStones_imperative(S, J))
+        println(numJewelsInStones_imperative(S, J))
+        println(numJewelsInStones_functional(S, J))*/
 
+    val imperativeRunTime = calculateRunTime(numJewelsInStones_imperative(S, J))
+    val foldRunTime = calculateRunTime(numJewelsInStones_imperative(S, J))
+    val functionalRunTime = calculateRunTime(numJewelsInStones_functional(S, J))
+    println(s"" +
+      s"imperativeRunTime = $imperativeRunTime seconds vs " +
+      s"foldRunTime= $foldRunTime seconds vs " +
+      s"functionalRunTime = $functionalRunTime seconds")
+
+    //imperativeRunTime = 0.581 seconds vs foldRunTime= 0.0 seconds vs functionalRunTime = 0.014 seconds
   }
 
   def numJewelsInStones_imperative(J: String, S: String): Int = {

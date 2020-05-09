@@ -36,13 +36,11 @@ object ValidPerfectSquare {
         println(s"runtime of isPerfectSquare is $runtime1 seconds OR ${(runtime1 * 1000).toInt} milliseconds")
     */
 
-    val number = 104976
-    println(s"sqrt of $number is ${math.sqrt(104976)}") // library check
+    val number = 808201
+    println(s"sqrt of $number is ${math.sqrt(number)}") // library check
 
     val runtime2 = RunTimeCalculation.calculateRunTime(println(isPerfectSquare_binarySearch(number)))
     println(s"runtime of isPerfectSquare is $runtime2 seconds OR ${(runtime2 * 1000).toInt} milliseconds")
-
-
 
 
   }
@@ -67,15 +65,15 @@ object ValidPerfectSquare {
     flag
   }
 
-  /** *
+  /**
     *
     * 68 / 68 test cases passed.
     * Status: Accepted
-    * Runtime: 388 ms
+    * Runtime: 372 ms
     * Memory Usage: 48.4 MB
     *
-    * Runtime: 388 ms, faster than 91.67% of Scala online submissions for Valid Perfect Square.
-    * Memory Usage: 48.4 MB, less than 100.00% of Scala online submissions for Valid Perfect Square.
+    * Runtime: 384 ms, faster than 91.67% of Scala online submissions for Valid Perfect Square.
+    * Memory Usage: 48.7 MB, less than 100.00% of Scala online submissions for Valid Perfect Square.
     *
     */
 

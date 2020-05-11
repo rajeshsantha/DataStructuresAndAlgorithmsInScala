@@ -6,7 +6,7 @@ package com.concept.scala.hackerrank.functionalProgramming
   *
   *
   */
-object TheSumsofPowers {
+object TheSumsOfPowers {
   def numberOfWays (X: Int, N: Int): Int = {
     def calculatePowers (x: Int, n: Int, num: Int): Int = {
       val numbersTillN = math.pow(num, n).toInt

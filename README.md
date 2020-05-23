@@ -27,4 +27,4 @@
 |[src.com.dsa.java](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/java)|Sorting Implementations in Java :soon: | 
 |[src.com.dsa.scala](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/scala)|Sorting Implementations in Scala :soon: |
 
-![DSA_meme2](https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/e35/83013673_119724836247138_5047414041965239973_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=T9kDlmOyNb0AX8OIpmQ&oh=001b7f22eabc4082c1b1b0833d3e986a&oe=5EC2ACCF)
+

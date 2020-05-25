@@ -77,15 +77,12 @@ object UncrossedLines {
 
   def main(args: Array[String]): Unit = {
 
-    RunTimeCalculation.calculateRunTime {
-    }
 
     val totalRuntime = RunTimeCalculation.calculateRunTime {
       println(maxUncrossedLines(Array(2, 5, 1, 2, 5), Array(10, 5, 2, 1, 5, 2)))
 
     }
     println(s" total run time = $totalRuntime seconds OR ${totalRuntime * 1000} milliseonds")
-
     /*
     3
      total run time = 0.694 seconds OR 694.0 milliseonds

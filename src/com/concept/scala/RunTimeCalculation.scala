@@ -9,5 +9,11 @@ object RunTimeCalculation {
     val end = System.currentTimeMillis
     (end - start) / 1000.toFloat
   }
+  def continueTil(condition: => Boolean)(operation: => Unit): Unit = {
+    if (condition) {
+      operation
+      continueTil(condition)(operation)
+    }
+  }
 
 }

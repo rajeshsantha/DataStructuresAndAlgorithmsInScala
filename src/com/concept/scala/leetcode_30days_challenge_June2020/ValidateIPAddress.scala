@@ -84,17 +84,19 @@ object ValidateIPAddress {
 
   def isValidIPV6 (IP: String): Boolean = {
     val strArr = IP.split(':')
-    for (p <- strArr) {
+    strArr.foreach { p =>
       if (p.length() > 4 || p.isEmpty) return false
-      for (c <- p.toCharArray) if (!Character.isDigit(c) && !isValidHexa(c)) return false
+      p.toCharArray.foreach(c => if (!Character.isDigit(c) && !isValidHexa(c)) return false)
     }
-    IP.charAt(IP.length() - 1) != ':'
+    IP.last != ':'
+
   }
 
   def isValidHexa (a: Char): Boolean = (a >= 'a' && a <= 'f') || (a >= 'A' && a <= 'F')
 
 
 }
+
 /*
 
 class Solution {

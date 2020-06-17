@@ -53,8 +53,9 @@ object ValidateIPAddress {
     println(validIPAddress(s1))
     println(validIPAddress(s2))
     println(validIPAddress(s3))
-
-
+    println(validIPAddress("1e1.4.5.6"))
+    println(validIPAddress("12..33.4"))
+    println(validIPAddress("01.01.01.01"))
   }
 
   def validIPAddress (IP: String): String = {
@@ -66,28 +67,29 @@ object ValidateIPAddress {
       val isNoDotAtEnd = IP.last != '.'
       val ipValidation = isValidIPV4(IP)
 
-      if (isDotCount3 && isArrayLength4 && isNoDotAtEnd && ipValidation) return "IPV4"
+      if (isDotCount3 && isArrayLength4 && isNoDotAtEnd && ipValidation) return "IPv4"
     }
     if (IP.contains(':')) {
-      if (IP.count(_ == ':') == 7 && IP.split(':').length == 8 && isValidIPV6(IP)) return "IPV6"
+      if (IP.count(_ == ':') == 7 && IP.split(':').length == 8 && isValidIPV6(IP)) return "IPv6"
     }
-    return "neither"
+    return "Neither"
 
   }
 
   def isValidIPV4 (IP: String): Boolean = {
-    val strArr = IP.split('.').map(_.toInt)
+    val strArr = IP.split('.')
+    strArr.foreach(p =>
+      if (p.isEmpty || p.head == '0') return false else
+        p.toCharArray.foreach(c => if (!Character.isDigit(c)) return false))
     val isValidNumber = strArr.map(_.toString.length).forall(_ <= 3)
-    val isValidRange = strArr.forall(x => x >= 0 && x <= 255)
+    val isValidRange = strArr.map(_.toInt).forall(x => x >= 0 && x <= 255)
     isValidNumber && isValidRange
   }
 
   def isValidIPV6 (IP: String): Boolean = {
     val strArr = IP.split(':')
-    strArr.foreach { p =>
-      if (p.length() > 4 || p.isEmpty) return false
-      p.toCharArray.foreach(c => if (!Character.isDigit(c) && !isValidHexa(c)) return false)
-    }
+    strArr.foreach(p => if (p.length() > 4 || p.isEmpty) return false else
+      p.toCharArray.foreach(c => if (!Character.isDigit(c) && !isValidHexa(c)) return false))
     IP.last != ':'
 
   }

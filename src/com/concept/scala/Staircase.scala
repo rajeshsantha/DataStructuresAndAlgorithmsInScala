@@ -1,7 +1,6 @@
 package com.concept.scala
 
 /**
-  * @author Rajesh
   * @see https://www.hackerrank.com/challenges/staircase/problem
   *
   */

@@ -1,8 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 /**
-  * @author Rajesh
-  * @todo
+* @todo
   *       Given a list, repeat each element in the list N amount of times.
   *
   * @Input_Format

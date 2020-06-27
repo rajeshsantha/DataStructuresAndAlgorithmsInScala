@@ -1,8 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 /**
-  * @author Rajesh
-  * @todo
+* @todo
   * For a given list with N integers, return a new list removing the elements at odd positions
   * @Input_Format
   *

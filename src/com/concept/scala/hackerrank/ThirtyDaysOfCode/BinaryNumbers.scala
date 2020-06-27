@@ -1,7 +1,6 @@
 package com.concept.scala.hackerrank.ThirtyDaysOfCode
 
 /**
-  * @author Rajesh
   * @todo Given a base-10 integer, , convert it to binary (base-2).
   *       Then find and print the base-10 integer denoting the maximum number of consecutive 1's in n's binary representation.
   * @see https://www.hackerrank.com/challenges/30-binary-numbers/problem

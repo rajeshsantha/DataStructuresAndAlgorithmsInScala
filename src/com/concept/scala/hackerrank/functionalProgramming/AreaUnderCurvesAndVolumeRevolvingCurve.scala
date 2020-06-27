@@ -1,7 +1,6 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 /**
-  * @author Rajesh
   * @todo refer the below link
   * @note Use functional programming, avoid imperative programming (no Vars, no loops, no side effects)
   *       P.S  : Its more of a calculus problem than a functional programming.

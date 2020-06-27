@@ -3,8 +3,7 @@ package com.concept.scala.hackerrank.functionalProgramming
 import scala.annotation.tailrec
 
 /**
-  * @author Rajesh
-  * @note Use functional programming, avoid imperative programming.(follwed by Version 1.1 and 1.2)
+* @note Use functional programming, avoid imperative programming.(follwed by Version 1.1 and 1.2)
   *       This one uses tail recursion in functional programming.(check StringCompressionAlgorithm_OneLiner_Version  for one-liner solution)
   * @see https://www.hackerrank.com/challenges/string-compression/problem
   * @example If Input string is "abcaaabbb" => output should be abca3b3

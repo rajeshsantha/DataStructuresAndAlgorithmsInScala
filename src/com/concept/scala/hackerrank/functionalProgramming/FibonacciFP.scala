@@ -3,7 +3,6 @@ package com.concept.scala.hackerrank.functionalProgramming
 import scala.collection.mutable.ListBuffer
 
 /**
-  * @author Rajesh
   * @todo
   * For each test case, print Fib(n) % 10^8+7
   *  @see https://www.hackerrank.com/challenges/fibonacci-fp/problem

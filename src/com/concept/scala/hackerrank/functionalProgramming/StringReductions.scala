@@ -4,7 +4,6 @@ import scala.annotation.tailrec
 import scala.collection.mutable
 
 /**
-  * @author Rajesh
   * @todo String Reductions based on the input
   * @usecase Implement the solution in all 3 ways.
   *          i)  With Built-in libraries

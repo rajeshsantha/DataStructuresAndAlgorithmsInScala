@@ -4,8 +4,7 @@ import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 
 /**
-  * @author Rajesh
-  * @todo String Permutations based on the input
+* @todo String Permutations based on the input
   * @usecase Implement the solution in all 3 ways.
   *          i)  With Built-in libraries
   *          ii) With recursion

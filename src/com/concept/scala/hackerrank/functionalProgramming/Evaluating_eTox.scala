@@ -5,7 +5,6 @@ import scala.collection.mutable.ListBuffer
 
 
 /**
-  * @author Rajesh
   * @todo
   * Evaluate {e to the power of x} for given values of  x by using the summation of series for the first 10 terms.
   * @Input_Format

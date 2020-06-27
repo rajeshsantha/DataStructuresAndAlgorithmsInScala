@@ -1,8 +1,7 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 /**
-  * @author Rajesh
-  * @see https://www.hackerrank.com/challenges/filter-elements/problem
+* @see https://www.hackerrank.com/challenges/filter-elements/problem
   */
 object FilterElements {
 

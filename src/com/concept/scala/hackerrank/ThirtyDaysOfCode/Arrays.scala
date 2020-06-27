@@ -1,7 +1,6 @@
 package com.concept.scala.hackerrank.ThirtyDaysOfCode
 
 /**
-  * @author Rajesh
   * @todo part of 30 days of code challenge. (Arrays)
   * @see https://www.hackerrank.com/challenges/30-arrays/problem
   * @note Use functional programming, avoid imperative programming.

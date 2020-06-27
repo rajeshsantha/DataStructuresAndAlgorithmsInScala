@@ -1,7 +1,6 @@
 package com.concept.scala.hackerrank.functionalProgramming
 
 /**
-  * @author Rajesh
   * @todo
   * You are given a list. Return the sum of odd elements from the given list.
   * @note Use functional programming, avoid imperative programming.

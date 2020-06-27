@@ -1,7 +1,6 @@
 package com.concept.scala.sequences
 
 /**
-  * @author Rajesh
   * @usecase lauching object for all sequence problems
   */
 object Launcher {

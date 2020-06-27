@@ -3,8 +3,7 @@ package com.concept.scala.hackerrank.functionalProgramming
 import scala.annotation.tailrec
 
 /**
-  * @author Rajesh
-  * @todo String mingling
+* @todo String mingling
   * @example if string1 is "abcd", string2 is "1234", output should be "a1b2c3d4"
   * @usecase Implement the solution in all 3 ways.
   *          i)  With Built-in libraries

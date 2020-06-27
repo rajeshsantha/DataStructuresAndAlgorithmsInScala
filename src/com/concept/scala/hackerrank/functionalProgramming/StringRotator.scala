@@ -4,8 +4,7 @@ import scala.collection.mutable.ListBuffer
 import scala.io.StdIn
 
 /**
-  * @author Rajesh
-  * @todo Rotate the string
+* @todo Rotate the string
   * @example Input string => abc ,then output string should be =>bca cab abc
   * @note Use functional programming.
   * @see https://www.hackerrank.com/challenges/rotate-string/problem

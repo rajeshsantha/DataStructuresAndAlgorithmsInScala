@@ -1,7 +1,6 @@
 package com.dsa.scala.functionalDataStructures
 
 /**
-  * @author Rajesh
   * @todo Implement merge sort
   * @note Use functional programming, avoid imperative programming.
   *

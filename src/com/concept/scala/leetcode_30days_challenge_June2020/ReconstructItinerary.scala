@@ -1,5 +1,9 @@
 package com.concept.scala.leetcode_30days_challenge_June2020
 
+import java.util.concurrent.ConcurrentHashMap
+
+import scala.collection.mutable
+
 /** **
   * Day 28
   *
@@ -29,12 +33,55 @@ package com.concept.scala.leetcode_30days_challenge_June2020
   */
 object ReconstructItinerary {
   def main(args: Array[String]): Unit = {
+    val tickets: List[List[String]] = List(List("MUC", "LHR"), List("JFK", "MUC"), List("SFO", "SJC"), List("LHR", "SFO"))
+    val tickets2: List[List[String]] = List(List("JFK", "SFO"), List("JFK", "ATL"), List("SFO", "ATL"), List("ATL", "JFK"), List("ATL", "SFO"))
 
+    println(findItineraryByDFSTest(tickets).mkString("[", ",", "]"))
+    println(findItineraryByDFSTest(tickets2).mkString("[", ",", "]"))
+
+    //final solution
+    println(findItineraryByDFS(tickets).mkString("[", ",", "]"))
+    println(findItineraryByDFS(tickets2).mkString("[", ",", "]"))
   }
-  def findItinerary(tickets: List[List[String]]): List[String] = {
 
+  def findItineraryByDFSTest(tickets: List[List[String]]): List[String] = {
+    val hashmap = scala.collection.mutable.HashMap[String, String]()
+    val result = mutable.ListBuffer[String]()
 
-    List[String]()
+    tickets.foreach { x =>
+      if (hashmap.contains(x.head)) {
+        if (x.last < x.head) hashmap.update(x.head, x.last)
+      } else hashmap.put(x.head, x.last)
+    }
+    /*
+     JFK already present with ATL
+     ATL already present with SFO
+    [JFK,SFO,ATL,JFK,SFO,ATL]
+    ["JFK","ATL","JFK","SFO","ATL","SFO"]
+     */
+    val ticketsnew = tickets.map(_.head).sorted
+    var current = "JFK"
+    result.append(current)
+    for (i <- ticketsnew.indices) {
+      current = hashmap(current)
+      result.append(current)
+    }
+    result.toList
   }
+  def helper(graph: Map[String, List[String]], startingAirport: String): (Map[String, List[String]], List[String]) = {
+    graph.get(startingAirport) match {
+      case None => (graph, List(startingAirport))
+      case Some(airport1 :: airport2) => {
+        val (newGraph, previousList) = helper(if (airport2.isEmpty) graph - (startingAirport) else graph + (startingAirport -> airport2), airport1)
+        val (enrichedGraph, restOfList) = helper(newGraph, startingAirport)
+        (enrichedGraph, (restOfList ++ previousList))
+      }
+      case Some(Nil) => throw new IllegalArgumentException("No element to process")
+
+    }
+  }
+  //final solution
+  def findItineraryByDFS(tickets: List[List[String]]): List[String] =
+    helper(tickets.groupBy(_.head).mapValues(t => t.map(_ (1))).map({ case ((key, values)) => (key, values.sorted) }).toMap[String, List[String]], "JFK")._2
 
 }

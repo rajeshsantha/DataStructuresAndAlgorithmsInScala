@@ -45,8 +45,8 @@ object QueueReconstructionbyHeight {
     */
   def reconstructQueue(people: Array[Array[Int]]): Array[Array[Int]] = {
     val buffer: scala.collection.mutable.ListBuffer[Array[Int]] = ListBuffer[Array[Int]]()
-    //val sortedPeople = people.sortBy(-_.head)
-    val sortedPeople = people.sorted((p1: Array[Int], p2: Array[Int]) => if (p1(0) == p2(0)) p1(1) - p2(1) else p2(0) - p1(0))
+    val sortedPeople = people.sortBy(-_.head)
+    //val sortedPeople = people.sorted((p1: Array[Int], p2: Array[Int]) => if (p1(0) == p2(0)) p1(1) - p2(1) else p2(0) - p1(0))
     for (i <- sortedPeople.indices) buffer.insert(sortedPeople(i).last, sortedPeople(i))
     buffer.toArray
   }

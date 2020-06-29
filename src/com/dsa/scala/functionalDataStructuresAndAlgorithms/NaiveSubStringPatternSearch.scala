@@ -60,6 +60,6 @@ object NaiveSubStringPatternSearch {
     input.indices.find(index => input.length >= index + target.length && target.indices.forall(tIndex => inputString(index + tIndex) == target(tIndex))) getOrElse -1
 
 
-  def naiveSubStringSearch_builtin(input: String, target: String): Int = input.indexOf(target)
+  def naiveSubStringSearch_builtin(input: String, target: String): Int = input indexOf target
 
 }

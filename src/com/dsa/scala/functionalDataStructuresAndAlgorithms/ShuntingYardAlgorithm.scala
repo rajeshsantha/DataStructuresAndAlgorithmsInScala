@@ -1,4 +1,4 @@
-package com.dsa.scala.functionalDataStructures
+package com.dsa.scala.functionalDataStructuresAndAlgorithms
 
 /**
   * @usecase Shunting Yard algorithm implentation to solve infix to postfix convertion AND postfix evaluation

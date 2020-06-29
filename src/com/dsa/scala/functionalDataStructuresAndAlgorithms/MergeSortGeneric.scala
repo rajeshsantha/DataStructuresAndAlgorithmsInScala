@@ -1,4 +1,4 @@
-package com.dsa.scala.functionalDataStructures
+package com.dsa.scala.functionalDataStructuresAndAlgorithms
 
 /**
   * @todo Implement merge sort

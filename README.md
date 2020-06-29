@@ -26,6 +26,6 @@
 |[scala.sequences](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/sequences)|Contains  implementations of sequences(Arithmetic,Fibonacci,Geometric) in functional programming :ok: | 
 |[scala.leetcodeGeneralProblems](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcodeGeneralProblems)|Generic problems from LeetCode **in progress** :arrow_forward:|
 |[src.com.dsa.java](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/java)|Sorting Implementations in Java :soon: | 
-|[src.com.dsa.scala](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/scala)|Sorting Implementations in Scala :soon: |
+|[Scala Functional Data Structures & Algorithms](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/scala)|Sorting and searching functional Implementations in Scala (and also have iterative implementations) :soon: |
 
 

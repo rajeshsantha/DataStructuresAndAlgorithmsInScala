@@ -6,26 +6,26 @@ import com.concept.scala.RunTimeCalculation
   *
   * @todo find the index of the pattern(if exists) in input string by using naive backtracking method
   * @example if input string is "when a job is scheduled to execute every minute by using cron.d in Linux and that job fetches and updates items from a queue persisted in MySQL, that job can take longer than 1 minute to execute and thus you can end up with 2 or 3 processes executing at the same time and contending on the same MySQL table."
-  *          and target patter is "MySQL"
+  *          and target pattern is "MySQL"
   *          return 138 (MySQL first ocuurance is at 138th index of input string)
   *
   */
 object NaiveSubStringPatternSearch {
   val inputString = "when a job is scheduled to execute every minute by using cron.d in Linux and that job fetches and updates items from a queue persisted in MySQL, that job can take longer than 1 minute to execute and thus you can end up with 2 or 3 processes executing at the same time and contending on the same MySQL table."
-  val patterToSearch = "MySQL"
+  val patternToSearch = "MySQL"
 
   def main(args: Array[String]): Unit = {
 
     println("******** naiveSubStringSearch_iterative **********")
-    val iterativeRuntime = RunTimeCalculation.calculateRunTime(printResult(naiveSubStringSearch_iterative(inputString, patterToSearch)))
+    val iterativeRuntime = RunTimeCalculation.calculateRunTime(printResult(naiveSubStringSearch_iterative(inputString, patternToSearch)))
     print(s"         =>  took ${iterativeRuntime * 1000} milliseconds")
 
     println("\n******** naiveSubStringSearch_functional **********")
-    val functionalRuntime = RunTimeCalculation.calculateRunTime(printResult(naiveSubStringSearch_functional(inputString, patterToSearch)))
+    val functionalRuntime = RunTimeCalculation.calculateRunTime(printResult(naiveSubStringSearch_functional(inputString, patternToSearch)))
     print(s"         =>  took ${functionalRuntime * 1000} milliseconds")
 
     println("\n******** naiveSubStringSearch_builtin **********")
-    val builtinRuntime = RunTimeCalculation.calculateRunTime(printResult(naiveSubStringSearch_builtin(inputString, patterToSearch)))
+    val builtinRuntime = RunTimeCalculation.calculateRunTime(printResult(naiveSubStringSearch_builtin(inputString, patternToSearch)))
     print(s"         =>  took ${builtinRuntime * 1000} milliseconds")
     /*
     output:
@@ -52,8 +52,8 @@ object NaiveSubStringPatternSearch {
   }
 
   def printResult(result: Int): Unit = result match {
-    case -1 => print(s" $patterToSearch not found")
-    case _ => print(s" $patterToSearch found at index $result")
+    case -1 => print(s" $patternToSearch not found")
+    case _ => print(s" $patternToSearch found at index $result")
   }
 
   def naiveSubStringSearch_functional(input: String, target: String): Int =

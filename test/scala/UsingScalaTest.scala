@@ -25,14 +25,10 @@ class UsingScalaTest extends FlatSpec with Matchers {
   }
 
   "a list" should "be empty on create" in new EmptyArrayList {
-    Thread.sleep(2000)
     list.size should be(0)
-    Thread.sleep(2000)
   }
   "a list" should "increase it's size after adding elements" in new NonEmptyArrayList {
-    Thread.sleep(2000)
     list.size should be(3)
-    Thread.sleep(2000)
   }
   "binary number" should "matching with builtin method result" in new TestBinaryConversion {
     result should be(45 toBinaryString)

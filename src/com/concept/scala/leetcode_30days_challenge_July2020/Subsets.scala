@@ -39,11 +39,8 @@ object Subsets {
   def subsets(nums: Array[Int]): List[List[Int]] = {
     val len = nums.length
     var result = List[List[Int]]()
-    for (i <- len to 0 by -1) {
-      val temp = nums.combinations(i).map(_.toList).toList
-      result :::= temp
-    }
-    result
+    for (i <- len to 0 by -1)  result :::=nums.combinations(i).map(_.toList).toList 
+   result
   }
 
   def main(args: Array[String]): Unit = {

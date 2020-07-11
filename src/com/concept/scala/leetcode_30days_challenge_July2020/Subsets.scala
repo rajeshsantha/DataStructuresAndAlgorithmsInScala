@@ -41,6 +41,7 @@ object Subsets {
     var result = List[List[Int]]()
     for (i <- len to 0 by -1)  result :::=nums.combinations(i).map(_.toList).toList 
    result
+   //OR {for (i <- len to 0 by -1) yield  nums.combinations(i).map(_.toList).toList }.toList
   }
 
   def main(args: Array[String]): Unit = {

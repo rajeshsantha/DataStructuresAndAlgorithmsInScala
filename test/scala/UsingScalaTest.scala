@@ -16,7 +16,7 @@ class UsingScalaTest extends FlatSpec with Matchers {
     val list = ListBuffer[String]()
     list append "someItem"
     list append "someItem0"
-    list.append("SomeItem1")
+    list append "SomeItem1"
 
   }
 

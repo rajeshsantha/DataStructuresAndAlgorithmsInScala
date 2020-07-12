@@ -39,10 +39,14 @@ object Subsets {
   def subsets(nums: Array[Int]): List[List[Int]] = {
     val len = nums.length
     var result = List[List[Int]]()
-    for (i <- len to 0 by -1)  result :::=nums.combinations(i).map(_.toList).toList 
-   result
-   //OR {for (i <- len to 0 by -1) yield  nums.combinations(i).map(_.toList).toList }.toList
+    for (i <- len to 0 by -1) result :::= nums.combinations(i).map(_.toList).toList
+    result
+    //OR {for (i <- len to 0 by -1) yield  nums.combinations(i).map(_.toList).toList }.toList
   }
+
+  def subsets_functional(nums: Array[Int]): List[List[Int]] =
+    (for (i <- nums.length to 0 by -1) yield nums.combinations(i).map(_.toList)).map(_.toList).toList.flatten
+
 
   def main(args: Array[String]): Unit = {
     val testcaseResult1: List[List[Int]] = subsets(Array(1, 2, 3))

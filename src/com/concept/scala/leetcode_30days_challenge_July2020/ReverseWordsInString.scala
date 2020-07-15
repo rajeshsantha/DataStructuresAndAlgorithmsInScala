@@ -38,8 +38,6 @@ object ReverseWordsInString {
     *
     */
   def reverseWords1(s: String): String = s.split(" ").map(_.trim).filter(_.length > 0).reverse.mkString(" ")
-
-
   /** *
     *
     * 25 / 25 test cases passed.

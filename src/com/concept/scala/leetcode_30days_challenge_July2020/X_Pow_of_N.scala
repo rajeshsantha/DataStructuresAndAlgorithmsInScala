@@ -40,6 +40,6 @@ object X_Pow_of_N {
       }
     }
 
-    if (n < 0) if (n == Int.MinValue) 1 / myPow(x, -(n + 1)) / x else 1 / myPow(x, -n) else helper(x, n)
+    if (n < 0) if (n == Int.MinValue) 1 / myPow_recursive(x, -(n + 1)) / x else 1 / myPow_recursive(x, -n) else helper(x, n)
   }
 }

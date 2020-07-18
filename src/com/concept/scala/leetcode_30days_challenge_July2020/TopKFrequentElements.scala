@@ -33,7 +33,6 @@ object TopKFrequentElements {
       if (topKList.length < k)
         topKList += tuple
       else {
-        //val topKMin: (Int, Int) = topKList.sortBy(_._2).head
         val topKMin: (Int, Int) = topKList.minBy(_._2)
         if (tuple._2 > topKMin._2) topKList -= topKMin += tuple
       }

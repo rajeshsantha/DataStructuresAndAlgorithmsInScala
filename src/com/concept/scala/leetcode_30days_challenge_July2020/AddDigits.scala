@@ -18,8 +18,8 @@ package com.concept.scala.leetcode_30days_challenge_July2020
   */
 object AddDigits {
   def main(args: Array[String]): Unit = {
-    println("final result is " + addDigits(38))
-    println("final result is " + addDigits(199))
+    println(addDigits(38))
+    println(addDigits(199))
     println(addDigitsByMath(199))
     println(addDigitsByMath(38))
   }

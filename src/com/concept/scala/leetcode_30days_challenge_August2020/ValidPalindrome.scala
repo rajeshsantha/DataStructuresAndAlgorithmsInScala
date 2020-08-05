@@ -35,13 +35,7 @@ object ValidPalindrome {
 
   }
 
-  /** *
-    * 481 / 481 test cases passed.
-    * Status: Accepted
-    * Runtime: 688 ms
-    * Memory Usage: 59.7 MB
-    *
-    */
+  
   def isPalindrome(s: String): Boolean = {
     val filteredString = s.split("").filter(_.matches("[A-Za-z0-9]+")).mkString
     filteredString.toLowerCase == filteredString.toLowerCase.reverse

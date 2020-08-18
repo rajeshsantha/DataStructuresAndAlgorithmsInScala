@@ -22,7 +22,7 @@
 |[hackerrank.problemSolving](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/problemSolving)|Solutions to  Hackerrank Problem Solving section :soon: |
 |[hackerrank.warmups](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/warmups)|~~Hackerrank warmup solutions~~| 
 |[hackerrank.sql](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/sql)|Hackerrank SQL section| 
-|[hackerrank.ThirtyDaysOfCode](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/ThirtyDaysOfCode)|~~Hackerrank "30 Days Of Code" solutions~~|
+|[hackerrank.ThirtyDaysOfCode](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/ThirtyDaysOfCode)|Hackerrank "30 Days Of Code" solutions|
 |[scala.sequences](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/sequences)|Contains  implementations of sequences(Arithmetic,Fibonacci,Geometric) in functional programming :ok: | 
 |[scala.leetcodeGeneralProblems](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcodeGeneralProblems)|Generic problems from LeetCode **in progress** :arrow_forward:|
 |[src.com.dsa.java](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/java)|Sorting Implementations in Java :soon: | 

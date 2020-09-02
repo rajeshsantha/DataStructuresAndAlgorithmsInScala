@@ -1,9 +1,13 @@
-package scala.leetcode_30days_challenge_July2020
+package scala
+package leetcode_30days_challenge_July2020
 
-import com.concept.scala.leetcode_30days_challenge_July2020.Subsets.subsets
-import org.scalatest.{FlatSpec, Matchers}
 
-class TestSubsets extends FlatSpec with Matchers {
+import com.concept.scala.leetcode_30days_challenge_July2020.Subsets._
+
+import scala.Util.MyScalaTestUtil
+
+
+class MyScalaTestSubsets extends MyScalaTestUtil {
 
   trait TestSubsetsList {
     val testcaseResult1: List[List[Int]] = subsets(Array(1, 2, 3))

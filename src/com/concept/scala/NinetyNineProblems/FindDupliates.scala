@@ -20,7 +20,7 @@ object FindDupliates {
 
   def findDuplicatesBuiltin(list: List[Int]): List[Int] = list.distinct diff list
 
-  def findDuplicateFirstDuplicateInConstanttime(arr: List[Int]): Int = {
+  def findFirstDuplicateInConstanttime(arr: List[Int]): Int = {
     val offset = 1
     var a = 0
     for (i <- arr.indices) a = a ^ (arr(i) + offset) ^ i

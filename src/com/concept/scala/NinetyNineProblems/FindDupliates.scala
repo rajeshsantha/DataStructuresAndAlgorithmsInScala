@@ -5,7 +5,7 @@ object FindDupliates {
     println(findDuplicates(List(1, 7, 2, 4, 1, 5, 7, 8, 3)).mkString(",")) //1,7
     println(findDuplicatesByGrouping(List(1, 7, 2, 4, 1, 5, 7, 8, 3)).mkString(",")) //1,7
     println(findDuplicatesBuiltin(List(1, 7, 2, 4, 1, 5, 7, 8, 3)).mkString(",")) //1,7
-    println(findFirstDuplicateInConstanttime(List(1, 7, 2, 4, 1, 5, 7, 8, 3))) //1
+    println(findFirstDuplicateInConstanttime(List(1, 7,7, 2, 4, 1, 5, 8, 3))) //7
   }
 
   def findDuplicates(list: List[Int]): List[Int] = {

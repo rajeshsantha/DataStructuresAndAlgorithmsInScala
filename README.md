@@ -1,6 +1,5 @@
 # Contents of Repository
 
-
 ##### This project contains snippets of Scala code for various problems available on LeetCode,Hackerrank and also Data structures and algorithms implementation that required to solve those problems.
 
 

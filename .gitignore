@@ -3,3 +3,6 @@
 /out/
 /target/
 *.iml
+.history
+.cache
+.lib/

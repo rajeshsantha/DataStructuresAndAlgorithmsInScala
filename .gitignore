@@ -4,5 +4,4 @@
 /target/
 *.iml
 .history
-.cache
 .lib/

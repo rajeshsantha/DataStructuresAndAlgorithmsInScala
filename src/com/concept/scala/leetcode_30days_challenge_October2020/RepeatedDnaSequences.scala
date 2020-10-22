@@ -22,7 +22,7 @@ package com.concept.scala.leetcode_30days_challenge_October2020
  *
  *
  */
-object RepeatedDnaSequences {
+object RepeatedDnaSequences extends App{
   /** *
    *
    * 32 / 32 test cases passed.

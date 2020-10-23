@@ -34,8 +34,7 @@ import com.concept.scala.leetcode_30days_challenge_April2020.TreeNode
   * @note Each tree has at most 5000 nodes.
   *       Each node's value is between [-10^5, 10^5].
   * @see https://leetcode.com/explore/challenge/card/september-leetcoding-challenge/554/week-1-september-1st-september-7th/3449/
-  *      OR
-  *      https://leetcode.com/problems/all-elements-in-two-binary-search-trees
+  *      OR https://leetcode.com/problems/all-elements-in-two-binary-search-trees
   *
   *
   *

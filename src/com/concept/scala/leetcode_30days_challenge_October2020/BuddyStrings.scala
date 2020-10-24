@@ -54,7 +54,6 @@ object BuddyStrings {
    * Status: Accepted
    * Runtime: 460 ms
    * Memory Usage: 51.3 MB
-   *
    */
   def buddyStrings(A: String, B: String): Boolean = {
     if (A.length != B.length) return false

@@ -12,7 +12,7 @@ package com.concept.scala.leetcode_30days_challenge_September2020
   *          This is a partition so that each letter appears in at most one part.
   *          A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits S into less parts.
   * @see https://leetcode.com/explore/challenge/card/september-leetcoding-challenge/554/week-1-september-1st-september-7th/3448/
-  *      OR
+  *      
   *      https://leetcode.com/problems/partition-labels/
   */
 object PartitionLabels {

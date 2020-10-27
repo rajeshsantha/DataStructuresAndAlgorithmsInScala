@@ -3,7 +3,7 @@ package com.concept.scala.NinetyNineProblems
 import scala.annotation.tailrec
 
 /**
-  * @see Scala 99-Problems
+  * 
   * @note Scala-99-problems are about,implementing solutions without using builtin method(not applicable to language desgin features)
   *       to understand the language concepts clearly
   * @example //     scala> reverse(List(1, 9, 2, 3, 5, 8))

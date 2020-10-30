@@ -49,7 +49,7 @@ object BuddyStrings {
   }
   else false
 
-  /** *
+  /***
    * 29 / 29 test cases passed.
    * Status: Accepted
    * Runtime: 460 ms

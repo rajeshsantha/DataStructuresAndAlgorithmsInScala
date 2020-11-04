@@ -28,6 +28,7 @@ package com.concept.scala.leetcode_30days_challenge_November2020
   *
   *          Input: s = "tourist"
   *          Output: 1
+  
   * @note 1 <= s.length <= 500
   *       s contains only lowercase English letters
   * @see https://leetcode.com/explore/challenge/card/november-leetcoding-challenge/564/week-1-november-1st-november-7th/3518/
@@ -39,9 +40,9 @@ package com.concept.scala.leetcode_30days_challenge_November2020
   */
 object ConsecutiveCharacters {
   def main(args: Array[String]): Unit = {
-    println(maxPower("hooraaaaaaaaaaay"))
-    println(maxPower("triplepillooooow"))
-    println(maxPower("leetcode"))
+    println(maxPower("hooraaaaaaaaaaay")) //Output: 11
+    println(maxPower("triplepillooooow")) //Output: 5
+    println(maxPower("leetcode"))         //Output: 2
   }
 
   /** *

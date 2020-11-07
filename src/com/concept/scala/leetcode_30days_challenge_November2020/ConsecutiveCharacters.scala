@@ -43,7 +43,7 @@ object ConsecutiveCharacters {
     println(maxPower("hooraaaaaaaaaaay")) //Output: 11
     println(maxPower("triplepillooooow")) //Output: 5
     println(maxPower("leetcode"))         //Output: 2
-    println(maxPower("abbcccddddeeeeedcba"))         //Output: 5
+    println(maxPower("abbcccddddeeeeedcba")) //Output: 5
   }
 
   /** *

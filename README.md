@@ -9,6 +9,7 @@
 :notebook: [Algorithms and data structures data sheet By Rice University](https://www.clear.rice.edu/comp160/data_cheat.html)
 
 
+
 |Package|What's Illustrated|
 |---|---|
 |[Leetcode30days Challenge April 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_April2020)| Solutions to LeetCode 30 days challenge- For April **completed** :ok: *(April 1st, 2020 to April 30, 2020)*|

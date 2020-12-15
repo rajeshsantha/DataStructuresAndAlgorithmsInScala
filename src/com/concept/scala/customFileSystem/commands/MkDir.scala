@@ -12,11 +12,12 @@ case class MkDir(name: String) extends Command {
     def updateStructure(currentDirectory: Directory, paths: List[String], newEntry: DirEntry): Directory = {
       if (paths.isEmpty) currentDirectory.addEntry(newEntry)
       else {
-        /*
+      
+        val oldEntry = currentDirectory.findEntry(paths.head).asDirectory
+          /*
          if currentDirectory is /a
          and path is  List("b")
          */
-        val oldEntry = currentDirectory.findEntry(paths.head).asDirectory
         currentDirectory.replaceEntry(oldEntry.name, updateStructure(oldEntry, paths.tail, newEntry))
 
       }

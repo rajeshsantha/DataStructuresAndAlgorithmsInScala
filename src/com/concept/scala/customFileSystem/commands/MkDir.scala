@@ -16,6 +16,9 @@ case class MkDir(name: String) extends Command {
          if currentDirectory is /a
          and path is  List("b")
          */
+        println(paths)
+        println(currentDirectory.findEntry(paths.head))
+        println(paths.head.isEmpty)
         val oldEntry = currentDirectory.findEntry(paths.head).asDirectory
         currentDirectory.replaceEntry(oldEntry.name, updateStructure(oldEntry, paths.tail, newEntry))
 

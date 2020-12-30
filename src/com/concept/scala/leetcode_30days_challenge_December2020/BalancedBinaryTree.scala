@@ -24,6 +24,9 @@ import com.concept.scala.leetcode_30days_challenge_April2020.TreeNode
   *          Output: true
   * @note The number of nodes in the tree is in the range [0, 5000].
   *       -10 4 <= Node.val <= 10 4
+  * @see https://leetcode.com/explore/challenge/card/december-leetcoding-challenge/572/week-4-december-22nd-december-28th/3577/
+  * .    OR
+  * .    https://leetcode.com/problems/balanced-binary-tree/
   *
   */
 object BalancedBinaryTree {

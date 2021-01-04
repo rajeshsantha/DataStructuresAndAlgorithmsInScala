@@ -28,13 +28,25 @@ object SumOfLeftLeaves {
     *
     */
   def sumOfLeftLeaves(root: TreeNode): Int = {
-    sumLeft(root, isLeft = false)
+    sumLeftRefactored(root, isLeft = false)
   }
 
   def sumLeft(root: TreeNode, isLeft: Boolean): Int = {
     root match {
       case _ if root == null => 0
       case _ if root.left == null && root.right == null =>
+        isLeft match {
+          case true => root.value
+          case false => 0
+        }
+      case _ => sumLeft(root.left, isLeft = true) + sumLeft(root.right, isLeft = false)
+    }
+  }
+
+  def sumLeftRefactored(root: TreeNode, isLeft: Boolean): Int = {
+    root match {
+      case NullNode() => 0
+      case NotNullNode() =>
         isLeft match {
           case true => root.value
           case false => 0
@@ -52,6 +64,7 @@ object SumOfLeftLeaves {
 
     println(sumOfLeftLeaves(root))
   }
+
 }
 
 /**
@@ -62,3 +75,14 @@ object SumOfLeftLeaves {
   * var right: TreeNode = _right
   * }
   */
+object NullNode {
+  def unapply(node: TreeNode): Boolean = node == null
+}
+
+object NotNullNode {
+  def unapply(node: TreeNode): Boolean = node.left == null && node.right == null
+}
+
+object NodeValueEvaluator {
+  def unapply(isLeftFlag: Boolean, node: TreeNode): Int = if (isLeftFlag) node.value else 0
+}

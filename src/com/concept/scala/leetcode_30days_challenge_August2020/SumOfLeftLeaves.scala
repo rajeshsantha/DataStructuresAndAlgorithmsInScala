@@ -6,7 +6,7 @@ import com.concept.scala.leetcode_30days_challenge_June2020.SearchInBinarySearch
   *
   * day 24
   *
-  * @todo Find the sum of all left leaves in a given binary tree.
+  * @todo Find the sum of all left leaves in a given binary tree
   * @example 3
   *          / \
   *          9  20

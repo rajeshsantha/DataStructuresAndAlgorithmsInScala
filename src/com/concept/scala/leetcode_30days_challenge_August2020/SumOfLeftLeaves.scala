@@ -45,8 +45,8 @@ object SumOfLeftLeaves {
 
   def sumLeftRefactored(root: TreeNode, isLeft: Boolean): Int = {
     root match {
-      case NullNode(_) => 0
-      case NotNullNode(_) =>
+      case NullNode() => 0
+      case NotNullNode() =>
         isLeft match {
           case true => root.value
           case false => 0

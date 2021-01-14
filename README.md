@@ -2,8 +2,6 @@
 
 ##### This project contains snippets of Scala code for various problems available on LeetCode,Hackerrank and also Data structures and algorithms implementation that required to solve those problems.
 
-:notebook: [Algorithms visualization By University of San Francisco](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-
 :notebook: [Algorithms cheat sheet By Princeton University](https://algs4.cs.princeton.edu/cheatsheet/)
 
 :notebook: [Algorithms and data structures data sheet By Rice University](https://www.clear.rice.edu/comp160/data_cheat.html)

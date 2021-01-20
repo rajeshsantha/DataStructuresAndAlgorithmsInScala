@@ -26,7 +26,7 @@
 |[hackerrank.ThirtyDaysOfCode](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/ThirtyDaysOfCode)|Hackerrank "30 Days Of Code" solutions|
 |[scala.sequences](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/sequences)|Contains  implementations of sequences(Arithmetic,Fibonacci,Geometric) in functional programming :ok: | 
 |[scala.customFileSystem](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/customFileSystem)|Contains File System implementation in scala **In Progress** :arrow_forward: | 
-|[scala.leetcodeGeneralProblems](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcodeGeneralProblems)|Generic problems from LeetCode **in progress** :arrow_forward:|
+|[scala.leetcodeGeneralProblems](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcodeGeneralProblems)|Generic problems from LeetCode **In Progress** :arrow_forward:|
 |[src.com.dsa.java](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/java)|Sorting Implementations in Java :arrow_forward: | 
 |[Scala Functional Data Structures & Algorithms](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/dsa/scala)|Sorting and searching functional Implementations in Scala (and also have iterative implementations) :soon: |
 

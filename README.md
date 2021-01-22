@@ -10,7 +10,7 @@
 |Package|What's Illustrated|
 |---|---|
 |[Leetcode30days Challenge April 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_April2020)| Solutions to LeetCode 30 days challenge for April **completed** :ok: *(April 1st, 2020 to April 30, 2020)*|
-|[Leetcode30days Challenge May 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_May2020)| Solutions to LeetCode 30 days challenge for May **completed** :ok: *(May 1st, 2020 to May 31, 2020)*|
+|[Leetcode30days Challenge May 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_May2020)| Solutions to LeetCode 30 days challenge for May **Completed** :ok: *(May 1st, 2020 to May 31, 2020)*|
 |[Leetcode30days Challenge June 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_June2020)| Solutions to LeetCode 30 days challenge for June **completed** :ok: *(June 1st, 2020 to June 30, 2020)*|
 |[Leetcode30days Challenge July 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_July2020)| Solutions to LeetCode 30 days challenge for July **completed** :ok: *(July 1st, 2020 to July 31, 2020)*|
 |[Leetcode30days Challenge August 2020](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/leetcode_30days_challenge_August2020)| Solutions to LeetCode 30 days challenge for August **completed** :ok: *(August 1st, 2020 to August 31, 2020)*|

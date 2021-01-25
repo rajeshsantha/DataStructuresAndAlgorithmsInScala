@@ -57,7 +57,7 @@ object ArrayFormationThroughConcatenation {
     * Runtime: 484 ms
     * Memory Usage: 52.4 MB
     *
-    * @param arr standard 1D array m
+    * @param arr standard 1D array
     * @param pieces 2D Array containing sub arrays(pieces) to for `arr`
     * @return if `pieces` can form `arr`
     */

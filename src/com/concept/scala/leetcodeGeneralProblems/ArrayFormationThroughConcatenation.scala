@@ -9,7 +9,8 @@ import scala.collection.mutable
   * @see https://leetcode.com/problems/check-array-formation-through-concatenation/
   *      OR
   *      https://leetcode.com/explore/challenge/card/january-leetcoding-challenge-2021/579/week-1-january-1st-january-7th/3589/
-  * @example Example 1:
+  * @example 
+Example 1:
   *
   *          Input: arr = [85], pieces = [[85]]
   *          Output: true

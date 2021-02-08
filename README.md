@@ -21,7 +21,7 @@
 |[NinetyNineProblems](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/NinetyNineProblems)|Solutions to  "S-99: Ninety-Nine Scala Problems"  **In Progress** :soon: | 
 |[hackerrank.functionalProgramming](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/functionalProgramming)|Solutions to  Hackerrank funtional programming section using scala :soon: | 
 |[hackerrank.problemSolving](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/problemSolving)|Solutions to  Hackerrank Problem Solving section :soon: |
-|[hackerrank.warmups](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/warmups)|~~Hackerrank warmup solutions~~| 
+|[hackerrank.warmups](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/warmups)| Hackerrank warmup solutions | 
 |[hackerrank.sql](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/sql)|Hackerrank SQL section| 
 |[hackerrank.ThirtyDaysOfCode](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/hackerrank/ThirtyDaysOfCode)|Hackerrank "30 Days Of Code" solutions|
 |[scala.sequences](https://github.com/rajeshsantha/DataStructuresAndAlgorithmsInScala/tree/master/src/com/concept/scala/sequences)|Contains  implementations of sequences(Arithmetic,Fibonacci,Geometric) in functional programming :ok: | 

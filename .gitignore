@@ -3,4 +3,7 @@
 /out/
 /target/
 *.iml
+*.xml
+.idea/misc.xml
+
 
